@@ -1,0 +1,20 @@
+﻿body{font-family:Dotum,Tahoma;}
+a:link{color:#0077ff;text-decoration:none;font-weight:bold;}
+a:visited{color:#0077ff;text-decoration:none;font-weight:bold;}
+a:hover{color:#ff5005;text-decoration:none;font-weight:bold;}
+
+fieldset{margin-bottom:10px;border:solid 1px #e5e5e5;}
+
+/* 검색박스 스타일 */
+.gridSearch{padding:0px 0px 0px 0px;border-collapse:collapse;width:100%;margin-bottom:5px;}
+.gridSearch td{border:solid 1px #d1d1d1;padding:2px 2px 2px 2px;text-align:center;}
+.gridSearch .searchLabel{width:95px;background-color:#eceee4;}
+.gridSearch .searchObject{text-align:left;background-color:#ffffff;}
+.gridSearch .searchButton{background-color:#ffffff;text-align:right;}
+
+/* 등록폼 */
+.infoTable{width:100%;line-height:15px;background-color:#f0f0f0;border-top:solid 2px #fda628;border-collapse:collapse;}
+.infoTable .infoCol{height:25px;font-family:Dotum,Tahoma;font-size:11px;font-weight:bold;color:#555555;border-left:solid 1px #d1d1d1;border-right:solid 1px #d1d1d1;border-bottom:solid 1px #d1d1d1;text-align:center;}
+.infoTable .inputCol{height:25px;background-color:#ffffff;border-right:solid 1px #d1d1d1;border-bottom:solid 1px #d1d1d1;padding-left:3px;}
+.infoSystem{text-align:left;margin-top:12px;float:left;font-size:8pt;}
+.infoCommand{text-align:right;margin-top:10px;float:right;}

@@ -57,6 +57,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Common\Css\default.css" />
+    <Content Include="Common\Css\Error.css" />
+    <Content Include="Common\Css\jquery-ui.css" />
+    <Content Include="Common\Css\login.css" />
+    <Content Include="Common\Css\popup.css" />
+    <Content Include="Common\Css\View.css" />
+    <Content Include="Common\Scripts\jquery-1.11.1.min.js" />
+    <Content Include="Common\Scripts\jquery.browser.min.js" />
+    <Content Include="Common\Scripts\jquery.ui-1.9.2.min.js" />
+    <Content Include="Common\Scripts\View.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
