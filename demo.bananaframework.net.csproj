@@ -142,6 +142,7 @@
     <Content Include="Library\BANANA.International.dll" />
     <Content Include="Library\BANANA.Web.Controls.dll" />
     <Content Include="Library\BANANA.Web.dll" />
+    <Content Include="View\BAS\기준정보관리.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -239,7 +240,6 @@
     <Folder Include="Framework\Coconut\" />
     <Folder Include="Framework\Kiwi\" />
     <Folder Include="Storage\" />
-    <Folder Include="View\BAS\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
