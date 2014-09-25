@@ -192,8 +192,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Framework\Banana\" />
+    <Folder Include="Framework\Coconut\" />
+    <Folder Include="Framework\Common\" />
+    <Folder Include="Framework\Kiwi\" />
     <Folder Include="Storage\" />
-    <Folder Include="View\" />
+    <Folder Include="View\BAS\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
