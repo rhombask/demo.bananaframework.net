@@ -7,45 +7,45 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace demo.bananaframework.net {
+namespace demo.bananaframework.net.Framework.Common {
     
     
-    public partial class Default {
+    public partial class Find_my_id_and_password {
         
         /// <summary>
-        /// login control.
+        /// _txtUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm login;
+        protected global::System.Web.UI.WebControls.TextBox _txtUserName;
         
         /// <summary>
-        /// _txtUserID control.
+        /// _txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox _txtUserID;
+        protected global::System.Web.UI.WebControls.TextBox _txtEmail;
         
         /// <summary>
-        /// _txtUserPassword control.
+        /// _lblResult control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox _txtUserPassword;
+        protected global::System.Web.UI.WebControls.Label _lblResult;
         
         /// <summary>
-        /// _btnLOGIN control.
+        /// _btnOK control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button _btnLOGIN;
+        protected global::System.Web.UI.WebControls.Button _btnOK;
     }
 }

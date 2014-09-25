@@ -7,45 +7,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace demo.bananaframework.net {
+namespace demo.bananaframework.net.Framework.Banana {
     
     
     public partial class Default {
         
         /// <summary>
-        /// login control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm login;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// _txtUserID control.
+        /// _lblWelcome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox _txtUserID;
+        protected global::System.Web.UI.WebControls.Label _lblWelcome;
         
         /// <summary>
-        /// _txtUserPassword control.
+        /// _btnLogout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox _txtUserPassword;
+        protected global::System.Web.UI.WebControls.LinkButton _btnLogout;
         
         /// <summary>
-        /// _btnLOGIN control.
+        /// _ddlCompany control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button _btnLOGIN;
+        protected global::System.Web.UI.WebControls.DropDownList _ddlCompany;
+        
+        /// <summary>
+        /// DropDownMenu1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.DropDownMenu DropDownMenu1;
     }
 }

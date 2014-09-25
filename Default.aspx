@@ -12,7 +12,7 @@
 	<script src="/Framework/Common/Common.js" type="text/javascript"></script>
 </head>
 <body>
-	<form id="form1" runat="server">
+	<form id="login" runat="server">
 	<h1>Log In</h1>
 	<fieldset id="inputs">
 		<legend>로그인 항목</legend>
