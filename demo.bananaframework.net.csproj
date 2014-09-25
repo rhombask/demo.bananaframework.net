@@ -38,6 +38,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ajax, Version=5.7.20.2, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Ajax.dll</HintPath>
+    </Reference>
+    <Reference Include="BANANA.Common, Version=4.2.422.14268, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\BANANA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="BANANA.International, Version=4.2.251.14268, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\BANANA.International.dll</HintPath>
+    </Reference>
+    <Reference Include="BANANA.Web, Version=4.2.352.14268, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\BANANA.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="BANANA.Web.Controls, Version=4.2.257.14268, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\BANANA.Web.Controls.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -57,6 +77,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Common\404.aspx" />
+    <Content Include="Common\500.aspx" />
     <Content Include="Common\Css\default.css" />
     <Content Include="Common\Css\Error.css" />
     <Content Include="Common\Css\jquery-ui.css" />
@@ -67,9 +89,29 @@
     <Content Include="Common\Scripts\jquery.browser.min.js" />
     <Content Include="Common\Scripts\jquery.ui-1.9.2.min.js" />
     <Content Include="Common\Scripts\View.js" />
+    <Content Include="Library\Ajax.dll" />
+    <Content Include="Library\BANANA.Common.dll" />
+    <Content Include="Library\BANANA.International.dll" />
+    <Content Include="Library\BANANA.Web.Controls.dll" />
+    <Content Include="Library\BANANA.Web.dll" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\500.aspx.cs">
+      <DependentUpon>500.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\500.aspx.designer.cs">
+      <DependentUpon>500.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +122,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
