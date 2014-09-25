@@ -149,11 +149,33 @@
     <Compile Include="Common\500.aspx.designer.cs">
       <DependentUpon>500.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Control\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Control\Extensions.cs" />
+    <Compile Include="Control\MasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Popup.Master.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Popup.Master.designer.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Web.Master.cs">
+      <DependentUpon>Web.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Web.Master.designer.cs">
+      <DependentUpon>Web.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.md" />
+    <Content Include="Control\Web.Master" />
+    <Content Include="Control\Popup.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
