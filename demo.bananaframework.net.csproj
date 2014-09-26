@@ -143,7 +143,9 @@
     <Content Include="Library\BANANA.Web.Controls.dll" />
     <Content Include="Library\BANANA.Web.dll" />
     <Content Include="View\BAS\기준정보관리.txt" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\404.aspx.cs">
@@ -229,6 +231,7 @@
     <Content Include="README.md" />
     <Content Include="Control\Web.Master" />
     <Content Include="Control\Popup.Master" />
+    <None Include="Properties\PublishProfiles\deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

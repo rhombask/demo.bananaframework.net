@@ -38,21 +38,21 @@ namespace demo.bananaframework.net
 			try
 			{
 				// 로그인
-                DataTable _dt = base.GetDataTable("WSP_LOGIN"
-                    , _txtUserID.Text.Trim()
-                    );
+				DataTable _dt = base.GetDataTable("WSP_LOGIN"
+					, _txtUserID.Text.Trim()
+					);
 
-                if (base.GetDecryptTripleDES(_dt.Rows[0]["PWD"].ToString()) != _txtUserPassword.Text.Trim())
-                {
+				if (base.GetDecryptTripleDES(_dt.Rows[0]["PWD"].ToString()) != _txtUserPassword.Text.Trim())
+				{
 					BANANA.Web.NotificationBar.Show("비밀번호가 틀립니다.", BANANA.Web.NotificationBar.NotificationType.Error);
-                    return;
-                }
+					return;
+				}
 
-                base.SetCookie("UserID", _txtUserID.Text.Trim());
-                base.SetCookie("UserName", _dt.Rows[0]["NAME"].ToString());
-                base.SetCookie("UserGroupName", _dt.Rows[0]["USER_GRP"].ToString());
-                base.SetCookie("UserGroupCode", _dt.Rows[0]["USER_GRP_CD"].ToString());
-                Response.Redirect("/Framework/Banana/Default.aspx", false);
+				base.SetCookie("UserID", _txtUserID.Text.Trim());
+				base.SetCookie("UserName", _dt.Rows[0]["NAME"].ToString());
+				base.SetCookie("UserGroupName", _dt.Rows[0]["USER_GRP"].ToString());
+				base.SetCookie("UserGroupCode", _dt.Rows[0]["USER_GRP_CD"].ToString());
+				Response.Redirect("/Framework/Banana/Default.aspx", false);
 			}
 			catch (Exception err)
 			{
