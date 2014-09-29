@@ -35,13 +35,15 @@ ASP.NET 개발자라면 누구나 무료로 사용하실 수 있는 일반적인
 
 또한, SQL Server 연결정보도 공개되어 있으니 각종 테이블, 프로시저 및 사용자 정의 함수도 다운로드 받으셔서 연습해 보실 수 있습니다.
 
-본 템플릿 자체는 무료이나, 프레임워크의 기본이 되는 "바나나 프레임워크( http://www.bananaframework.net )"은 무료가 아닙니다.
+※ 본 템플릿 자체는 무료이나, 프레임워크의 기본이 되는 "바나나 프레임워크( http://www.bananaframework.net )"은 무료가 아닙니다.
 
-바나나 프레임워크의 라이선스 정책에 대해서는 여기( http://www.bananaframework.net/View/License.aspx )를 참고하세요.
+※ 바나나 프레임워크의 라이선스 정책에 대해서는 여기( http://www.bananaframework.net/View/License.aspx )를 참고하세요.
 
-본 템플릿을 제대로 구동하기 위해서는 바나나 프레임워크가 우선 설치되어야 합니다.
+※ 본 템플릿을 제대로 구동하기 위해서는 바나나 프레임워크가 우선 설치되어야 합니다.
 
-데모는 http://demo.bananaframework.net 에서 확인하실 수 있습니다.
+※ 바나나 프레임워크는 개인 개발자에게 무료로 배포되고 있습니다. 설치 파일은 여기 ( http://www.bananaframework.net/View/Download.aspx )를 클릭하세요.
+
+※ 데모는 http://demo.bananaframework.net 에서 확인하실 수 있습니다.
 
 ID: demo
 
