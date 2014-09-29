@@ -17,7 +17,7 @@
 	<form id="form1" runat="server">
 	<div id="frContainer">
 		<div id="frTop">
-			<div id="logo"><a href="/Framework/Banana/Default.aspx"><img src="/Images/logo-02.png" class="logo" alt="BANANA Framework v4.2" title="BANANA Framework v4.2" /></a></div>
+			<div id="logo"><a href="/Framework/Banana/Default.aspx"><img src="/Images/logo.png" class="logo" alt="BANANA Framework v4.2" title="BANANA Framework v4.2" /></a></div>
 			<div id="controlPanel">
 				<div id="currentTime">2013-02-11 15:45:59</div>
 				<div id="currentInfo">

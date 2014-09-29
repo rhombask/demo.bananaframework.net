@@ -1,6 +1,4 @@
-﻿// 작성자 : 한인수
-// 작성일 : 2014-09-11
-// 설  명 : 그리드 헤더 체크 박스 체크(해당 컬럼만 전체 체킹)
+﻿// 설  명 : 그리드 헤더 체크 박스 체크(해당 컬럼만 전체 체킹)
 function toggleCheckBox(_sender, _strClassName) {
     $("." + _strClassName).each(function () {
 
@@ -17,8 +15,6 @@ function toggleCheckBox(_sender, _strClassName) {
     });
 }
 
-// 작성자 : 한인수
-// 작성일 : 2014-09-11
 // 설  명 : 그리드 내부에 RadioButton 등록 시 하나만 체크하게 유도하는 함수
 function toggleRadioButton(_sender, _strClassName) {
     $("." + _strClassName).each(function () {
@@ -28,8 +24,6 @@ function toggleRadioButton(_sender, _strClassName) {
 }
 
 /* 제  목: 그리드에서 추가 화면을 호출함
- * 작성자: 손정민 (rhombask@devpia.com, 010-2865-4368)
- * 작성일: 2014-09-18 13:41
  * 설  명: Banana 프레임워크용으로 우선 개발해 놨다.
  */
 function showNewMenu(id, name, url) {
