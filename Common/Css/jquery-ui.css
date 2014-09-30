@@ -1,4 +1,4 @@
-﻿.ui-icon { width: 16px; height: 16px; background-image: url(/Images/ui-icons_454545_256x240.png); border: 0; outline: none; cursor: pointer; background-color: transparent; }
+﻿.ui-icon { width: 16px; height: 16px; background-image: url(/Images/ui-icons_454545_256x240.png); border: 0; outline: none; cursor: pointer; background-color: transparent; background-repeat: no-repeat; text-indent: -99999px; overflow: hidden; display:inline-block; }
 .ui-icon-pink { width: 16px; height: 16px; background-image: url(/Images/ui-icons_ff0084_256x240.png); border: 0; outline: none; cursor: pointer; background-color: transparent; }
 
 /* positioning */
@@ -190,7 +190,6 @@
 .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter: Alpha(Opacity=0); }
 .ui-front { z-index: 100; }
 .ui-state-disabled { cursor: default !important; }
-.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
 .ui-widget-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
 .ui-accordion .ui-accordion-header { display: block; cursor: pointer; position: relative; margin-top: 2px; padding: .5em .5em .5em .7em; min-height: 0; }
 .ui-accordion .ui-accordion-icons { padding-left: 2.2em; }

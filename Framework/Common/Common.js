@@ -21,6 +21,8 @@ function openModalPopup(url, w, h, callback) {
 	var winWidth	= w == undefined ? 800 : w;
 	var winHeight	= h == undefined ? 600 : h;
 
+	var $popup		= $("#_popupFrame");
+
 	// 배경 div 깔기
 	var $backGround	= $("<div />")
 		.css("top", "0px")
@@ -34,14 +36,21 @@ function openModalPopup(url, w, h, callback) {
 		.height( $(window).height() )
 		.appendTo("body");
 
+	// 로딩중
+	var $loading	= $("#divPageProgress").clone(true);
+
 	// 모달 팝업 뛰우기
-	$("#_popupFrame").dialog({
+	$popup.dialog({
 		iframe: true,
 		resizable: true,
 		height: winHeight,
 		width: winWidth,
 		close : function() {
+			// 모달 배경 없애기
 			$backGround.remove();
+			// 로딩중 없애기
+			$loading.remove();
+			$(this).attr("src", "about:blank");
 			callback($(this).data("args"));
 		},
 		resizeStart: function() {
@@ -55,11 +64,21 @@ function openModalPopup(url, w, h, callback) {
 		.css("overflow-y", "auto")
 		.attr("src", url);
 
+	// 로딩중 보이기
+	$loading
+		.insertBefore($popup)
+		.css("top", ($popup.height() - $loading.height()) / 2)
+		.css("left", ($popup.width() - $loading.width()) / 2)
+		.show();
+
 	// 모달 팝업 제목 변경
-	$("#_popupFrame").load(function () {
-		$(this).dialog("option", "title", $(this).contents().find("title").html().trim());
+	$popup.load(function () {
+		// 팝업이 닫힐 때에는 about:blank로 리디렉션 시키는데, 이때에는 title이 없을 수 있으므로 예외 처리를 한다.
+		$(this).dialog("option", "title", $(this).contents().find("title").html() != undefined ? $(this).contents().find("title").html().trim() : "");
+		// 로딩중 없애기
+		$loading.remove();
 	});
-}
+}	
 
 // 팝업창 닫기
 function closeModalPopup() {

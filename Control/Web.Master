@@ -16,8 +16,8 @@
 <body>
     <link href="/Common/Css/View.css" rel="stylesheet" />
 	<form id="form1" runat="server">
-	<div id="navigator" runat="server" class="navigator" />
-	<asp:ContentPlaceHolder ID="_cphBody" runat="server" />
+		<div id="navigator" runat="server" class="navigator" />
+		<asp:ContentPlaceHolder ID="_cphBody" runat="server" />
 	</form>
 </body>
 </html>
