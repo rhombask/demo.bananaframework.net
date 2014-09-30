@@ -98,7 +98,6 @@
     <Content Include="Framework\Common\clock.js" />
     <Content Include="Framework\Common\Common.js" />
     <Content Include="Framework\Common\Find-my-id-and-password.aspx" />
-    <Content Include="Framework\Common\PopupFrame.aspx" />
     <Content Include="Images\ajax-loader.gif" />
     <Content Include="Images\Flags\china.gif" />
     <Content Include="Images\Flags\japan.gif" />
@@ -240,13 +239,6 @@
     </Compile>
     <Compile Include="Framework\Common\Find-my-id-and-password.aspx.designer.cs">
       <DependentUpon>Find-my-id-and-password.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Framework\Common\PopupFrame.aspx.cs">
-      <DependentUpon>PopupFrame.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Framework\Common\PopupFrame.aspx.designer.cs">
-      <DependentUpon>PopupFrame.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\BAS\1000.aspx.cs">

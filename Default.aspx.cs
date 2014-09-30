@@ -50,7 +50,7 @@ namespace demo.bananaframework.net
 
 				base.SetCookie("UserID", _txtUserID.Text.Trim());
 				base.SetCookie("UserName", _dt.Rows[0]["NAME"].ToString());
-				base.SetCookie("UserGroupName", _dt.Rows[0]["USER_GRP"].ToString());
+				base.SetCookie("UserGroupName", _dt.Rows[0]["USER_GRP_NM"].ToString());
 				base.SetCookie("UserGroupCode", _dt.Rows[0]["USER_GRP_CD"].ToString());
 				Response.Redirect("/Framework/Banana/Default.aspx", false);
 			}
