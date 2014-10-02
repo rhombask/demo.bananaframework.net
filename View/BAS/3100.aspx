@@ -34,19 +34,16 @@
 					<bf:CheckBox ID="_ckbSELECT" runat="server" CssClass="_ckbSELECT" />
 				</ItemTemplate>
 				<HeaderTemplate>
-					<bf:CheckBox ID="_ckb_H_SELECT" runat="server"
-						onclick="toggleCheckBox(this, '_ckbSELECT');" />
+					<bf:CheckBox ID="_ckb_H_SELECT" runat="server" onclick="toggleCheckBox(this, '_ckbSELECT');" />
 				</HeaderTemplate>
 			</bf:TemplateField>
 			<bf:BoundDataField ID="NAME" DataTextField="NAME" HeaderText="이용자명" HorizontalAlignment="Center" />
 			<bf:TemplateField ID="USRID" HeaderText="이용자ID" HorizontalAlignment="Center">
 				<ItemTemplate>
-					<bf:HyperLink ID="_hlUSRID" runat="server"
-						Text='<%# Eval("USRID") %>'
-						NavigateUrl='<%# string.Format("/View/BAS/3110.aspx?USRID={0}", Eval("USRID")) %>' />
+					<bf:HyperLink ID="_hlUSRID" runat="server" Text='<%# Eval("USRID") %>' NavigateUrl='<%# string.Format("/View/BAS/3110.aspx?USRID={0}", Eval("USRID")) %>' />
 				</ItemTemplate>
 			</bf:TemplateField>
-			<bf:BoundDataField ID="USER_GRP" DataTextField="USER_GRP" HeaderText="사용자그룹코드" HorizontalAlignment="Center" />
+			<bf:BoundDataField ID="USER_GRP_NM" DataTextField="USER_GRP_NM" HeaderText="사용자그룹" HorizontalAlignment="Center" />
 			<bf:BoundDataField ID="LOGIN_DATE" DataTextField="LOGIN_DATE" HeaderText="최근 로그인 시간" HorizontalAlignment="Center" Width="200px" />
             <bf:BoundDataField ID="SYSREGDATE" DataTextField="SYSREGDATE" HeaderText="시스템등록일" HorizontalAlignment="Center" Width="140px" />
             <bf:BoundDataField ID="SYSREGNAME" DataTextField="SYSREGNAME" HeaderText="시스템등록자" HorizontalAlignment="Center" Width="140px" />

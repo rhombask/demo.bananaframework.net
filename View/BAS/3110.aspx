@@ -18,7 +18,7 @@
 				<td class="infoCol" style="width:120px;">사용자그룹</td>
 				<td class="inputCol"><bf:DropDownList ID="_ddlUSER_GRP" runat="server" Compulsory="true" ValidationGroup="_vgUser" /></td>
 				<td class="infoCol" style="width:120px;">전화번호</td>
-				<td class="inputCol"><bf:TextBox ID="_txtTELL" runat="server" ImeMode="DashNumeric" /></td>
+				<td class="inputCol"><bf:TextBox ID="_txtTELNO" runat="server" ImeMode="DashNumeric" /></td>
                 <td class="infoCol" style="width:120px;">E-Mail</td>
 				<td class="inputCol"><bf:TextBox ID="_txtEMAIL" runat="server" ImeMode="Email" /></td>
 			</tr>

@@ -45,8 +45,7 @@ namespace demo.bananaframework.net.View.BAS
         {
             try
             {
-                DataTable _dt = base.GetDataTable(
-                    "WSP_BAS3100_R1"
+                DataTable _dt = base.GetDataTable("WSP_BAS3100_R1"
                     , _ddlUSER_GRP.SelectedValue        // 사용자그룹코드
                     , _txtNAME.Text                     // 이용자명
                     , _txtUSRID.Text                    // 이용자ID

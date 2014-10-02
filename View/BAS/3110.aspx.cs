@@ -77,8 +77,8 @@ namespace demo.bananaframework.net.View.BAS
 				 * 암호화된 비밀번호는 복호화해서 출력하도록 합니다.
 				 */
                 _txtPWD.Text				= base.GetDecryptTripleDES(_dt.Rows[0]["PWD"].ToString());
-                _ddlUSER_GRP.SelectedValue	= _dt.Rows[0]["USER_GRP"].ToString();
-                _txtTELL.Text				= _dt.Rows[0]["TELL"].ToString();
+                _ddlUSER_GRP.SelectedValue	= _dt.Rows[0]["USER_GRP_CD"].ToString();
+                _txtTELNO.Text				= _dt.Rows[0]["TELNO"].ToString();
                 _txtEMAIL.Text				= _dt.Rows[0]["EMAIL"].ToString();
                 _txtBIGO.Text				= _dt.Rows[0]["BIGO"].ToString();
 				_dvSYSINFO.InnerHtml		= _dt.Rows[0]["SYSINFO"].ToString();
@@ -107,7 +107,7 @@ namespace demo.bananaframework.net.View.BAS
                         , base.GetEncryptTripleDES(_txtPWD.Text)    // 비밀번호
                         , _txtNAME.Text                             // 이용자명
                         , _ddlUSER_GRP.SelectedValue                // 사용자그룹코드
-                        , _txtTELL.Text                             // 연락처
+                        , _txtTELNO.Text                            // 연락처
                         , _txtEMAIL.Text                            // 이메일
                         , _txtBIGO.Text                             // 비고
                         , base.GetCookie("UserID")                  // 시스템등록자ID
@@ -121,7 +121,7 @@ namespace demo.bananaframework.net.View.BAS
                         , base.GetEncryptTripleDES(_txtPWD.Text)    // 비밀번호
                         , _txtNAME.Text                             // 이용자명
                         , _ddlUSER_GRP.SelectedValue                // 사용자그룹코드
-                        , _txtTELL.Text                             // 연락처
+                        , _txtTELNO.Text                            // 연락처
                         , _txtEMAIL.Text                            // 이메일
                         , _txtBIGO.Text                             // 비고
                         , base.GetCookie("UserID")                  // 시스템수정자ID

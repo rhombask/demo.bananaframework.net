@@ -49,13 +49,13 @@ namespace demo.bananaframework.net.View.BAS {
         protected global::BANANA.Web.Controls.DropDownList _ddlUSER_GRP;
         
         /// <summary>
-        /// _txtTELL control.
+        /// _txtTELNO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox _txtTELL;
+        protected global::BANANA.Web.Controls.TextBox _txtTELNO;
         
         /// <summary>
         /// _txtEMAIL control.

@@ -130,13 +130,13 @@ namespace demo.bananaframework.net.View.BAS {
         protected global::BANANA.Web.Controls.TemplateField USRID;
         
         /// <summary>
-        /// USER_GRP control.
+        /// USER_GRP_NM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.BoundDataField USER_GRP;
+        protected global::BANANA.Web.Controls.BoundDataField USER_GRP_NM;
         
         /// <summary>
         /// LOGIN_DATE control.
