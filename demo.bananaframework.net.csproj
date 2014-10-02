@@ -143,6 +143,10 @@
     <Content Include="Library\ja-JP\BANANA.International.resources.dll" />
     <Content Include="Library\ko-KR\BANANA.International.resources.dll" />
     <Content Include="Library\zh-CN\BANANA.International.resources.dll" />
+    <Content Include="View\ACC\1000.aspx" />
+    <Content Include="View\ACC\2000.aspx" />
+    <Content Include="View\ACC\3000.aspx" />
+    <Content Include="View\ACC\정산관리.txt" />
     <Content Include="View\BAS\1000.aspx" />
     <Content Include="View\BAS\1010.aspx" />
     <Content Include="View\BAS\1020.aspx" />
@@ -164,7 +168,15 @@
     <Content Include="View\Home.aspx" />
     <Content Include="View\MBR\1000.aspx" />
     <Content Include="View\MBR\1010.aspx" />
+    <Content Include="View\MBR\2000.aspx" />
+    <Content Include="View\MBR\3000.aspx" />
     <Content Include="View\MBR\회원관리.txt" />
+    <Content Include="View\PRD\1000.aspx" />
+    <Content Include="View\PRD\2000.aspx" />
+    <Content Include="View\PRD\상품관리.txt" />
+    <Content Include="View\SLS\1000.aspx" />
+    <Content Include="View\SLS\2000.aspx" />
+    <Content Include="View\SLS\매출관리.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -241,6 +253,27 @@
       <DependentUpon>Find-my-id-and-password.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\ACC\1000.aspx.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\ACC\1000.aspx.designer.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\ACC\2000.aspx.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\ACC\2000.aspx.designer.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\ACC\3000.aspx.cs">
+      <DependentUpon>3000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\ACC\3000.aspx.designer.cs">
+      <DependentUpon>3000.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\BAS\1000.aspx.cs">
       <DependentUpon>1000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -373,6 +406,48 @@
     </Compile>
     <Compile Include="View\MBR\1010.aspx.designer.cs">
       <DependentUpon>1010.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\MBR\2000.aspx.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\MBR\2000.aspx.designer.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\MBR\3000.aspx.cs">
+      <DependentUpon>3000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\MBR\3000.aspx.designer.cs">
+      <DependentUpon>3000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\PRD\1000.aspx.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\PRD\1000.aspx.designer.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\PRD\2000.aspx.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\PRD\2000.aspx.designer.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\SLS\1000.aspx.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\SLS\1000.aspx.designer.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\SLS\2000.aspx.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\SLS\2000.aspx.designer.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
