@@ -48,3 +48,5 @@ ASP.NET 개발자라면 누구나 무료로 사용하실 수 있는 일반적인
 ID: demo
 
 PW: demo
+
+※ /Control/Web.Maste 및 /Control/Popup.Master에서 구글 Analytics 관련 함수는 지우고 이용하시기 바랍니다.

@@ -79,6 +79,7 @@
   <ItemGroup>
     <Content Include="Common\404.aspx" />
     <Content Include="Common\500.aspx" />
+    <Content Include="Common\BusinessNo.aspx" />
     <Content Include="Common\Css\default.css" />
     <Content Include="Common\Css\Error.css" />
     <Content Include="Common\Css\jquery-ui.css" />
@@ -98,6 +99,7 @@
     <Content Include="Framework\Common\clock.js" />
     <Content Include="Framework\Common\Common.js" />
     <Content Include="Framework\Common\Find-my-id-and-password.aspx" />
+    <Content Include="googleb40b7846e16873c1.html" />
     <Content Include="Images\ajax-loader.gif" />
     <Content Include="Images\Flags\china.gif" />
     <Content Include="Images\Flags\japan.gif" />
@@ -196,8 +198,18 @@
     <Compile Include="Common\500.aspx.designer.cs">
       <DependentUpon>500.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Common\BusinessNo.aspx.cs">
+      <DependentUpon>BusinessNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\BusinessNo.aspx.designer.cs">
+      <DependentUpon>BusinessNo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Control\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\CheckDuplicatedLoginID.ashx.cs">
+      <DependentUpon>CheckDuplicatedLoginID.ashx</DependentUpon>
     </Compile>
     <Compile Include="Control\Extensions.cs" />
     <Compile Include="Control\MasterPage.cs">
@@ -454,6 +466,7 @@
     <Content Include="README.md" />
     <Content Include="Control\Web.Master" />
     <Content Include="Control\Popup.Master" />
+    <Content Include="Control\CheckDuplicatedLoginID.ashx" />
     <None Include="Properties\PublishProfiles\deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

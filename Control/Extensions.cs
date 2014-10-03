@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -25,6 +26,38 @@ namespace demo.bananaframework.net
 				matchNo++;
 			}
 			return sb.ToString();
+		}
+		#endregion
+
+		#region Decrypt : 데이터테이블 내용을 복호화 처리
+		/// <summary>
+		/// 데이터테이블 내용을 복호화 처리
+		/// </summary>
+		/// <param name="d"></param>
+		/// <param name="ColumnName"></param>
+		/// <returns></returns>
+		public static DataTable Decrypt(this DataTable d, params string[] ColumnName)
+		{
+			try
+			{
+				Control.BasePage _bp	= new Control.BasePage();
+				for (int i = 0; i < d.Rows.Count; i++)
+				{
+					for (int j = 0; j < d.Columns.Count; j++)
+					{
+						if (Array.IndexOf(ColumnName, d.Columns[j].ColumnName) > -1)
+						{
+							d.Rows[i][j]	= _bp.GetDecryptTripleDES(d.Rows[i][j].ToString());
+						}
+					}
+				}
+			}
+			catch
+			{
+				throw;
+			}
+
+			return d;
 		}
 		#endregion
 	}

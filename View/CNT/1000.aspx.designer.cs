@@ -13,40 +13,31 @@ namespace demo.bananaframework.net.View.CNT {
     public partial class _1000 {
         
         /// <summary>
-        /// _txtMBR_CD control.
+        /// _txtCNT_CD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox _txtMBR_CD;
+        protected global::BANANA.Web.Controls.TextBox _txtCNT_CD;
         
         /// <summary>
-        /// _txtMBR_NM control.
+        /// _txtCNT_NM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox _txtMBR_NM;
+        protected global::BANANA.Web.Controls.TextBox _txtCNT_NM;
         
         /// <summary>
-        /// _txtCNTR_HPNO control.
+        /// _txtSAUP_NO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox _txtCNTR_HPNO;
-        
-        /// <summary>
-        /// _txtCNTR_NM control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox _txtCNTR_NM;
+        protected global::BANANA.Web.Controls.TextBox _txtSAUP_NO;
         
         /// <summary>
         /// _btnSearch control.
@@ -67,6 +58,42 @@ namespace demo.bananaframework.net.View.CNT {
         protected global::BANANA.Web.Controls.Button _btnNew;
         
         /// <summary>
+        /// _txtPRSDNT_NM control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.TextBox _txtPRSDNT_NM;
+        
+        /// <summary>
+        /// _txtPRSDNT_HPNO control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.TextBox _txtPRSDNT_HPNO;
+        
+        /// <summary>
+        /// _dpSTRT control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.DatePicker _dpSTRT;
+        
+        /// <summary>
+        /// _dpEND control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.DatePicker _dpEND;
+        
+        /// <summary>
         /// FixedGrid1 control.
         /// </summary>
         /// <remarks>
@@ -74,59 +101,5 @@ namespace demo.bananaframework.net.View.CNT {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::BANANA.Web.Controls.FixedGrid FixedGrid1;
-        
-        /// <summary>
-        /// REGDT control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::BANANA.Web.Controls.BoundDataField REGDT;
-        
-        /// <summary>
-        /// MBR_CD control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::BANANA.Web.Controls.TemplateField MBR_CD;
-        
-        /// <summary>
-        /// MBR_NM control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::BANANA.Web.Controls.BoundDataField MBR_NM;
-        
-        /// <summary>
-        /// CNTR_NM control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::BANANA.Web.Controls.BoundDataField CNTR_NM;
-        
-        /// <summary>
-        /// CNTR_HPNO control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::BANANA.Web.Controls.BoundDataField CNTR_HPNO;
-        
-        /// <summary>
-        /// SAUP_NO control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::BANANA.Web.Controls.BoundDataField SAUP_NO;
     }
 }

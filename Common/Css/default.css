@@ -3,6 +3,7 @@ body{margin:0;padding:0;border:0;font-size:12px;}
 img{border:0;}
 p{margin:0;padding:0;}
 form{height:100%;}
+fieldset{margin-bottom:10px;border:solid 1px #e5e5e5;}
 h1{font-size:12pt;font-weight:bold;}
 table{border-collapse:collapse;margin:0;padding:0;}
 a:link{color:#0077ff;text-decoration:none;}
