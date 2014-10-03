@@ -50,4 +50,5 @@ ID: demo
 PW: demo
 
 ※ /Control/Web.Maste 및 /Control/Popup.Master에서 구글 Analytics 관련 함수는 지우고 이용하시기 바랍니다.
+
 ※ 확장자가 .amlic로 끝나는 라이선스 파일들은 다른 컴퓨터에서는 사용이 불가합니다. "바나나 프레임워크( http://www.bananaframework.net )" 홈페이지에서 라이선스 파일을 다운로드 받으세요.
