@@ -10,7 +10,7 @@ using BANANA.Web;
 namespace demo.bananaframework.net.View.CNT
 {
 	/// <summary>
-	/// 지사정보관리
+	/// 지사 정보관리
 	/// </summary>
 	public partial class _1000 : Control.BasePage
 	{

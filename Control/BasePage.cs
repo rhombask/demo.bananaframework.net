@@ -76,6 +76,44 @@ namespace demo.bananaframework.net.Control
 		}
 		#endregion
 
+		#region GetNullableValue : Null 가능형 값 반환
+		/// <summary>
+		/// Null 가능형 값 반환
+		/// </summary>
+		/// <param name="_dropDownList"></param>
+		/// <returns></returns>
+		public string GetNullableValue(BANANA.Web.Controls.TextBox _textBox)
+		{
+			if (_textBox.Text == null)
+			{
+				return null;
+			}
+			else
+			{
+				return _textBox.Text;
+			}
+		}
+		#endregion
+
+		#region GetNullableValue : Null 가능형 값 반환
+		/// <summary>
+		/// Null 가능형 값 반환
+		/// </summary>
+		/// <param name="_dropDownList"></param>
+		/// <returns></returns>
+		public string GetNullableValue(BANANA.Web.Controls.CodeHelper _codeHelper)
+		{
+			if (_codeHelper.TotalCode == "")
+			{
+				return null;
+			}
+			else
+			{
+				return _codeHelper.TotalCode;
+			}
+		}
+		#endregion
+
 		#region GetEncryptionData : JavaScript에서 사용할 암호화 함수
 		/// <summary>
 		/// JavaScript에서 사용할 암호화 함수

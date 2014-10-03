@@ -56,7 +56,7 @@
 			<bf:BoundDataField DataTextField="CNCDT" HeaderText="해제일자" HorizontalAlignment="Center" Width="70px" />
 			<bf:BoundDataField DataTextField="CNT_ID" HeaderText="로그인아이디" />
 			<bf:BoundDataField DataTextField="PRSDNT_NM" HeaderText="대표자명" HorizontalAlignment="Center" Width="60px" />
-			<bf:BoundDataField DataTextField="PRSDNT_HPNO" HeaderText="대표자휴대폰" HorizontalAlignment="Center" Width="80px" />
+			<bf:BoundDataField DataTextField="PRSDNT_HPNO" HeaderText="대표자휴대폰" HorizontalAlignment="Center" Width="90px" />
 			<bf:BoundDataField DataTextField="SAUP_NO" HeaderText="사업자등록번호" HorizontalAlignment="Center" Width="100px" />
 			<bf:BoundDataField DataTextField="BK_NM" HeaderText="은행명" />
 			<bf:BoundDataField DataTextField="BK_ACCT_NO" HeaderText="계좌번호" />

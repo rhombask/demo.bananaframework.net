@@ -31,9 +31,9 @@
 		// 부모페이지의 코드와 코드명에 값을 바인딩 처리함
 		function returnBusinessNo(BUBIN_NO, SAUP_NO, COMPANY_NM, UPTE, UPJONG, PRSDNT_NM, TELNO, FAXNO, EMAIL, COMPANY_TYPE, ADDR) {
 			// TotalCode
-			$totalcode_textbox.val(SAUP_NO);
+			$totalcode_textbox.val(COMPANY_NM);
 			// CodeName
-			$codename_textbox.val(COMPANY_NM);
+			$codename_textbox.val(SAUP_NO);
 
 			// Update 이벤트 트리거를 실행합니다.
 			var json_object = { "BUBIN_NO": BUBIN_NO

@@ -82,8 +82,8 @@ namespace demo.bananaframework.net.View.CNT
 				_txtBK_ACCT_NO.Text					= base.GetDecryptTripleDES(_dt.Rows[0]["BK_ACCT_NO"].ToString());
 				_txtBK_OWNER.Text					= base.GetDecryptTripleDES(_dt.Rows[0]["BK_OWNER"].ToString());
 				_txtMEMO.Text						= _dt.Rows[0]["MEMO"].ToString();
-				_chSAUP_NO.TotalCode				= _dt.Rows[0]["SAUP_NO"].ToString();
-				_chSAUP_NO.CodeName					= _dt.Rows[0]["COMPANY_NM"].ToString();
+				_chSAUP_NO.TotalCode				= _dt.Rows[0]["COMPANY_NM"].ToString();
+				_chSAUP_NO.CodeName					= _dt.Rows[0]["SAUP_NO"].ToString();
 				_txtCOMPANY_NM.Text					= _dt.Rows[0]["COMPANY_NM"].ToString();
 				_txtBUBIN_NO.Text					= base.GetDecryptTripleDES(_dt.Rows[0]["BUBIN_NO"].ToString());
 				_txtPRSDNT_NM2.Text					= _dt.Rows[0]["PRSDNT_NM2"].ToString();
@@ -171,9 +171,9 @@ namespace demo.bananaframework.net.View.CNT
 						, base.GetEncryptTripleDES(_txtBK_ACCT_NO.Text)			// 계좌번호(3-DES)
 						, base.GetEncryptTripleDES(_txtBK_OWNER.Text)			// 예금주(3-DES)
 						, _txtMEMO.Text											// 메모
-
-						// 사업자등록정보
-						, _chkNew.Checked ? _txtSAUP_NO.Text : _chSAUP_NO.TotalCode
+						
+						// 사업자등록정보은 코드명에 사업자등록번호를 넣어준다.
+						, _chkNew.Checked ? base.GetNullableValue(_txtSAUP_NO) : (_chSAUP_NO.CodeName == "" ? null : _chSAUP_NO.CodeName)
 																				// 사업자등록번호
 						, base.GetEncryptTripleDES(_txtBUBIN_NO.Text)			// 법인등록번호(3-DES)
 						, _txtCOMPANY_NM.Text									// 상호
@@ -213,9 +213,9 @@ namespace demo.bananaframework.net.View.CNT
 						, base.GetEncryptTripleDES(_txtBK_ACCT_NO.Text)			// 계좌번호(3-DES)
 						, base.GetEncryptTripleDES(_txtBK_OWNER.Text)			// 예금주(3-DES)
 						, _txtMEMO.Text											// 메모
-
-						// 사업자등록정보
-						, _chkNew.Checked ? _txtSAUP_NO.Text : _chSAUP_NO.TotalCode
+						
+						// 사업자등록정보은 코드명에 사업자등록번호를 넣어준다.
+						, _chkNew.Checked ? base.GetNullableValue(_txtSAUP_NO) : (_chSAUP_NO.CodeName == "" ? null : _chSAUP_NO.CodeName)
 																				// 사업자등록번호
 						, base.GetEncryptTripleDES(_txtBUBIN_NO.Text)			// 법인등록번호(3-DES)
 						, _txtCOMPANY_NM.Text									// 상호
