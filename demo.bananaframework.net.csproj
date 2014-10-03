@@ -99,7 +99,6 @@
     <Content Include="Framework\Common\clock.js" />
     <Content Include="Framework\Common\Common.js" />
     <Content Include="Framework\Common\Find-my-id-and-password.aspx" />
-    <Content Include="googleb40b7846e16873c1.html" />
     <Content Include="Images\ajax-loader.gif" />
     <Content Include="Images\Flags\china.gif" />
     <Content Include="Images\Flags\japan.gif" />
