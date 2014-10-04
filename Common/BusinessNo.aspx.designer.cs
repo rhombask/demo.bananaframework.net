@@ -7,28 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace demo.bananaframework.net.View.MBR {
+namespace demo.bananaframework.net.Common {
     
     
-    public partial class _1000 {
+    public partial class BusinessNo {
         
         /// <summary>
-        /// _txtCNT_CD control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox _txtCNT_CD;
-        
-        /// <summary>
-        /// _txtCNT_NM control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox _txtCNT_NM;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// _txtSAUP_NO control.
@@ -40,22 +31,22 @@ namespace demo.bananaframework.net.View.MBR {
         protected global::BANANA.Web.Controls.TextBox _txtSAUP_NO;
         
         /// <summary>
-        /// _btnSearch control.
+        /// _txtBUBIN_NO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.Button _btnSearch;
+        protected global::BANANA.Web.Controls.TextBox _txtBUBIN_NO;
         
         /// <summary>
-        /// _btnNew control.
+        /// _txtCOMPANY_NM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.Button _btnNew;
+        protected global::BANANA.Web.Controls.TextBox _txtCOMPANY_NM;
         
         /// <summary>
         /// _txtPRSDNT_NM control.
@@ -67,31 +58,13 @@ namespace demo.bananaframework.net.View.MBR {
         protected global::BANANA.Web.Controls.TextBox _txtPRSDNT_NM;
         
         /// <summary>
-        /// _txtPRSDNT_HPNO control.
+        /// _btnSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox _txtPRSDNT_HPNO;
-        
-        /// <summary>
-        /// _dpSTRT control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::BANANA.Web.Controls.DatePicker _dpSTRT;
-        
-        /// <summary>
-        /// _dpEND control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::BANANA.Web.Controls.DatePicker _dpEND;
+        protected global::BANANA.Web.Controls.Button _btnSearch;
         
         /// <summary>
         /// FixedGrid1 control.

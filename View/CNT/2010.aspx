@@ -162,9 +162,9 @@
 			</tr>
 		</table>
 	</fieldset>
-	<div id="_dvSYSINFO" runat="server" class="infoSystem" />
 	<fieldset>
 		<legend>명령수행</legend>
+		<div id="_dvSYSINFO" runat="server" class="infoSystem" />
 		<div class="infoCommand">
 			<bf:Button ID="_btnSave" runat="server" Text="저장" ButtonImage="Save" ButtonConfirm="True" ValidationGroup="Save" OnClick="_btnSave_Click" />
 			<!--

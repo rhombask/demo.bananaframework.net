@@ -96,6 +96,7 @@ namespace demo.bananaframework.net.View.CNT
 				_txtEMAIL.Text						= _dt.Rows[0]["EMAIL"].ToString();
 				_ddlCOMPANY_TYPE_CD.SelectedValue	= _dt.Rows[0]["COMPANY_TYPE_CD"].ToString();
 				_txtADDR.Text						= _dt.Rows[0]["ADDR"].ToString();
+				_dvSYSINFO.InnerHtml				= _dt.Rows[0]["SYSINFO"].ToString();
 			}
 			catch
 			{

@@ -160,6 +160,7 @@
     <Content Include="View\BAS\3300.aspx" />
     <Content Include="View\BAS\3400.aspx" />
     <Content Include="View\BAS\3410.aspx" />
+    <Content Include="View\BAS\3500.aspx" />
     <Content Include="View\BAS\기준정보관리.txt" />
     <Content Include="View\CNT\1000.aspx" />
     <Content Include="View\CNT\1010.aspx" />
@@ -368,6 +369,13 @@
     </Compile>
     <Compile Include="View\BAS\3410.aspx.designer.cs">
       <DependentUpon>3410.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\BAS\3500.aspx.cs">
+      <DependentUpon>3500.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\BAS\3500.aspx.designer.cs">
+      <DependentUpon>3500.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\CNT\1000.aspx.cs">
       <DependentUpon>1000.aspx</DependentUpon>
