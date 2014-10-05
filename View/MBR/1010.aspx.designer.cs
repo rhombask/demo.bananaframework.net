@@ -13,31 +13,40 @@ namespace demo.bananaframework.net.View.MBR {
     public partial class _1010 {
         
         /// <summary>
-        /// _txtCNT_CD control.
+        /// _hfMBR_CD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox _txtCNT_CD;
+        protected global::System.Web.UI.WebControls.HiddenField _hfMBR_CD;
         
         /// <summary>
-        /// _chkAuto control.
+        /// _txtMBR_CD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.CheckBox _chkAuto;
+        protected global::BANANA.Web.Controls.TextBox _txtMBR_CD;
         
         /// <summary>
-        /// _txtCNT_NM control.
+        /// _chkAUTO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox _txtCNT_NM;
+        protected global::BANANA.Web.Controls.CheckBox _chkAUTO;
+        
+        /// <summary>
+        /// _txtMBR_NM control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.TextBox _txtMBR_NM;
         
         /// <summary>
         /// _dpREGDT control.
@@ -49,13 +58,13 @@ namespace demo.bananaframework.net.View.MBR {
         protected global::BANANA.Web.Controls.DatePicker _dpREGDT;
         
         /// <summary>
-        /// _txtCNT_ID control.
+        /// _txtMBR_ID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox _txtCNT_ID;
+        protected global::BANANA.Web.Controls.TextBox _txtMBR_ID;
         
         /// <summary>
         /// Label7 control.
@@ -85,13 +94,31 @@ namespace demo.bananaframework.net.View.MBR {
         protected global::BANANA.Web.Controls.DatePicker _dpCNCDT;
         
         /// <summary>
-        /// _chBARNCH_CD control.
+        /// _lblBRANCH_CD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.CodeHelper _chBARNCH_CD;
+        protected global::BANANA.Web.Controls.Label _lblBRANCH_CD;
+        
+        /// <summary>
+        /// _chBRANCH_CD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.CodeHelper _chBRANCH_CD;
+        
+        /// <summary>
+        /// _lblAGENT_CD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.Label _lblAGENT_CD;
         
         /// <summary>
         /// _chAGENT_CD control.
@@ -112,6 +139,15 @@ namespace demo.bananaframework.net.View.MBR {
         protected global::BANANA.Web.Controls.DropDownList _ddlJIKUP_CD;
         
         /// <summary>
+        /// _lblREC_CD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.Label _lblREC_CD;
+        
+        /// <summary>
         /// _chREC_CD control.
         /// </summary>
         /// <remarks>
@@ -119,6 +155,15 @@ namespace demo.bananaframework.net.View.MBR {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::BANANA.Web.Controls.CodeHelper _chREC_CD;
+        
+        /// <summary>
+        /// _lblSUP_CD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.Label _lblSUP_CD;
         
         /// <summary>
         /// _chSUP_CD control.
@@ -139,22 +184,22 @@ namespace demo.bananaframework.net.View.MBR {
         protected global::BANANA.Web.Controls.Label Label1;
         
         /// <summary>
-        /// TextBox3 control.
+        /// _txtMBR_JUMIN_NO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox TextBox3;
+        protected global::BANANA.Web.Controls.TextBox _txtMBR_JUMIN_NO;
         
         /// <summary>
-        /// DatePicker1 control.
+        /// _dpMBR_BIRTH_DT control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.DatePicker DatePicker1;
+        protected global::BANANA.Web.Controls.DatePicker _dpMBR_BIRTH_DT;
         
         /// <summary>
         /// Label2 control.
@@ -166,13 +211,13 @@ namespace demo.bananaframework.net.View.MBR {
         protected global::BANANA.Web.Controls.Label Label2;
         
         /// <summary>
-        /// TextBox8 control.
+        /// _txtMBR_HPNO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox TextBox8;
+        protected global::BANANA.Web.Controls.TextBox _txtMBR_HPNO;
         
         /// <summary>
         /// Label3 control.
@@ -184,13 +229,13 @@ namespace demo.bananaframework.net.View.MBR {
         protected global::BANANA.Web.Controls.Label Label3;
         
         /// <summary>
-        /// TextBox9 control.
+        /// _txtMBR_EMAIL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox TextBox9;
+        protected global::BANANA.Web.Controls.TextBox _txtMBR_EMAIL;
         
         /// <summary>
         /// Label4 control.
@@ -202,13 +247,13 @@ namespace demo.bananaframework.net.View.MBR {
         protected global::BANANA.Web.Controls.Label Label4;
         
         /// <summary>
-        /// TextBox10 control.
+        /// _txtMBR_ADDR control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BANANA.Web.Controls.TextBox TextBox10;
+        protected global::BANANA.Web.Controls.TextBox _txtMBR_ADDR;
         
         /// <summary>
         /// _ddlBK_CD control.

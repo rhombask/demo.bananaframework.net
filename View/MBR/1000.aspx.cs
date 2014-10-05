@@ -42,11 +42,12 @@ namespace demo.bananaframework.net.View.MBR
         {
             try
             {
-                DataTable _dt			= base.GetDataTable("WSP_CNT1000_R1"
-					, _txtCNT_CD.Text
-					, _txtCNT_NM.Text
-                    , _txtSAUP_NO.Text
-					, _txtPRSDNT_NM.Text
+                DataTable _dt			= base.GetDataTable("WSP_MBR1000_R1"
+					, _txtMBR_CD.Text
+					, _txtMBR_NM.Text
+                    , _chREC_CD.TotalCode
+					, _chSUP_CD.TotalCode
+					, _chBRANCH_CD.TotalCode
 					, _dpSTRT.Date
 					, _dpEND.Date
                     );
@@ -56,15 +57,7 @@ namespace demo.bananaframework.net.View.MBR
 				 * DB에 암호화 되어서 들어가는 정보는 복호하 처리를 해 주어야 화면에 정상적으로 표기됩니다.
 				 * 아래 함수에 복호화 해야하는 DB 필드명들을 전달해 주세요.
 				 */
-				_dt.Decrypt("PRSDNT_HPNO", "BK_ACCT_NO", "BK_OWNER");
-
-				/*
-				 * 대표자휴대폰 필터링
-				 * DB에 암호화 되어서 들어가 있는 정보는 DB에서 필터링이 힘듭니다.
-				 * 따라서, C#의 데이터 테이블을 필터링 합니다.
-				 */
-				string query			= string.Format("PRSDNT_HPNO LIKE '%{0}%'", _txtPRSDNT_HPNO.Text);
-				_dt						= base.FilterTable(_dt, query);
+				_dt.Decrypt("MBR_HPNO");
 
                 FixedGrid1.DataSource	= _dt;
                 FixedGrid1.DataBind();

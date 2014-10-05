@@ -33,8 +33,8 @@ namespace demo.bananaframework.net.View.CNT
 					base.SetListItem(_ddlBK_CD, "Common", "A10", true);
 					base.SetListItem(_ddlCOMPANY_TYPE_CD, "Common", "A14", true);
 
-					ViewState["CNT_CD"]	= base.GetQueryString("CNT_CD");
-					if (ViewState["CNT_CD"].ToString() != "")
+					_hfCNT_CD.Value		= base.GetQueryString("CNT_CD");
+					if (_hfCNT_CD.Value != "")
 					{
 						// 조회 및 수정
 						ViewData();
@@ -62,10 +62,10 @@ namespace demo.bananaframework.net.View.CNT
 			try
 			{
 				DataTable _dt		= base.GetDataTable("WSP_CNT1010_R1"
-					, ViewState["CNT_CD"].ToString()
+					, _hfCNT_CD.Value
 					);
 
-				_txtCNT_CD.Text						= ViewState["CNT_CD"].ToString();
+				_txtCNT_CD.Text						= _hfCNT_CD.Value;
 				_txtCNT_CD.ReadOnly					= true;
 
 				_txtCNT_NM.Text						= _dt.Rows[0]["CNT_NM"].ToString();
@@ -154,7 +154,7 @@ namespace demo.bananaframework.net.View.CNT
 				 * 신규 등록과 기존 정보 수정을 분기합니다.
 				 * 개인정보 등은 3-DES 암호화를 시켜 줍니다.
 				 */
-				if (ViewState["CNT_CD"].ToString() == "")
+				if (_hfCNT_CD.Value == "")
 				{
 					base.ExecuteNonQuery("WSP_CNT1010_C1"
 						, _txtCNT_CD.Text										// 지사/대리점코드
@@ -229,8 +229,8 @@ namespace demo.bananaframework.net.View.CNT
 						, base.GetNullableValue(_ddlCOMPANY_TYPE_CD)			// 회사형태(A14)
 						, _txtADDR.Text											// 주소
 
-						, base.GetCookie("UserID")								// 시스템등록자ID
-						, base.GetCookie("UserName")							// 시스템등록자명
+						, base.GetCookie("UserID")								// 시스템수정자ID
+						, base.GetCookie("UserName")							// 시스템수정자명
 						);
 
 					BANANA.Web.NotificationBar.Show("지사 정보를 수정 하였습니다.", BANANA.Web.NotificationBar.NotificationType.Info);

@@ -2,54 +2,104 @@
 
 <%@ Register Assembly="BANANA.Web.Controls" Namespace="BANANA.Web.Controls" TagPrefix="bf" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="_cphHead" runat="server">
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// 자동채번 처리
+			$("#<%=_chkAUTO.ClientID%>").change(function () {
+				if (this.checked) {
+					$("#<%=_txtMBR_CD.ClientID%>").css("background-color", "#eaeae9");
+					$("#<%=_txtMBR_CD.ClientID%>").prop("readonly", true);
+				}
+				else {
+					$("#<%=_txtMBR_CD.ClientID%>").css("background-color", "#ffffff");
+					$("#<%=_txtMBR_CD.ClientID%>").prop("readonly", false);
+					$("#<%=_txtMBR_CD.ClientID%>").focus();
+				}
+			});
+
+			// 로그인아이디 onblur시, ajax로 중복 체크 처리
+			$("#<%=_txtMBR_ID.ClientID%>").blur(function () {
+				var $login_id	= $(this);
+
+				// serializedData
+				var serializedData	= "UserID=" + encodeURIComponent($($login_id).val()) + "&UserCode=";
+				if ($("#<%=_hfMBR_CD.ClientID%>").val() != "") {
+					serializedData		+= encodeURIComponent($("#<%=_txtMBR_CD.ClientID%>").val());
+				}
+
+				var request = $.ajax({
+					url: "/Control/CheckDuplicatedLoginID.ashx?" + serializedData,
+					type: "get"
+				});
+
+				request.done(function (response, textStatus, jqXHR) {
+					// 실패
+					if (response[0].GUBUN != "OK") {
+						$($login_id).val("");
+						$.NotificationBar.Show(response[0].Message, NotificationType.Error, 3000);
+					}
+				});
+
+				request.fail(function (jqXHR, textStatus, errorThrown) {
+					$.NotificationBar.Show("[" + textStatus + "] " + errorThrown, NotificationType.Error, 3000);
+				});
+
+				request.always(function () {
+				});
+			});
+			
+			$("#<%=_txtMBR_CD.ClientID%>").focus();
+		});
+	</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="_cphBody" runat="server">
+	<asp:HiddenField ID="_hfMBR_CD" runat="server" />
 	<fieldset>
 		<legend>회원 기본정보</legend>
 		<table class="infoTable">
 			<tr>
 				<td class="infoCol" style="width: 120px;">회원코드</td>
-				<td class="inputCol" style="width: 200px;"><bf:TextBox ID="_txtCNT_CD" runat="server" Width="90px" /><bf:CheckBox ID="_chkAuto" runat="server" Text="자동채번" /></td>
+				<td class="inputCol" style="width: 200px;"><bf:TextBox ID="_txtMBR_CD" runat="server" Width="90px" /><bf:CheckBox ID="_chkAUTO" runat="server" Text="자동채번" /></td>
 				<td class="infoCol" style="width: 120px;">회원명</td>
-				<td class="inputCol" style="width: 200px;"><bf:TextBox ID="_txtCNT_NM" runat="server" Compulsory="True" ValidationGroup="Save" /></td>
+				<td class="inputCol" style="width: 200px;"><bf:TextBox ID="_txtMBR_NM" runat="server" Compulsory="True" ValidationGroup="Save" /></td>
 				<td class="infoCol" style="width: 120px;">등록일자</td>
 				<td class="inputCol"><bf:DatePicker ID="_dpREGDT" runat="server" Compulsory="True" ValidationGroup="Save" /></td>
 			</tr>
 			<tr>
 				<td class="infoCol">로그인아이디</td>
-				<td class="inputCol"><bf:TextBox ID="_txtCNT_ID" runat="server" /></td>
+				<td class="inputCol"><bf:TextBox ID="_txtMBR_ID" runat="server" MaxLength="10" /></td>
 				<td class="infoCol"><bf:Label ID="Label7" runat="server" Text="비밀번호" ShowHelp="True" HelpMessage="3-DES 암호화 되어서 저장됩니다." /></td>
 				<td class="inputCol"><bf:TextBox ID="_txtPWD" runat="server" /></td>
 				<td class="infoCol">해제일자</td>
 				<td class="inputCol"><bf:DatePicker ID="_dpCNCDT" runat="server" /></td>
 			</tr>
 			<tr>
-				<td class="infoCol">소속지사</td>
-				<td class="inputCol"><bf:CodeHelper ID="_chBARNCH_CD" runat="server" CodeHelperType="Branch" Compulsory="True" ValidationGroup="Save" /></td>
-				<td class="infoCol">소속대리점</td>
-				<td class="inputCol"><bf:CodeHelper ID="_chAGENT_CD" runat="server" CodeHelperType="Agency" /></td>
+				<td class="infoCol"><bf:Label ID="_lblBRANCH_CD" runat="server" Text="소속지사" /></td>
+				<td class="inputCol"><bf:CodeHelper ID="_chBRANCH_CD" runat="server" CodeHelperType="Branch" Compulsory="True" ValidationGroup="Save" /></td>
+				<td class="infoCol"><bf:Label ID="_lblAGENT_CD" runat="server" Text="소속대리점" ShowHelp="True" HelpMessage="소속지사가 먼저 선택되면, 해당 지사에 소속된 대리점을 선택할 수 있습니다." /></td>
+				<td class="inputCol"><bf:CodeHelper ID="_chAGENT_CD" runat="server" /></td>
 				<td class="infoCol">직급</td>
 				<td class="inputCol"><bf:DropDownList ID="_ddlJIKUP_CD" runat="server" /></td>
 			</tr>
 			<tr>
-				<td class="infoCol">추천인</td>
-				<td class="inputCol"><bf:CodeHelper ID="_chREC_CD" runat="server" CodeHelperType="RECID" Compulsory="True" ValidationGroup="Save" /></td>
-				<td class="infoCol">후원인</td>
+				<td class="infoCol"><bf:Label ID="_lblREC_CD" runat="server" Text="추천회원" ShowHelp="True" HelpMessage="지정되지 않으면, 최상위 회원입니다." /></td>
+				<td class="inputCol"><bf:CodeHelper ID="_chREC_CD" runat="server" CodeHelperType="RECID" /></td>
+				<td class="infoCol"><bf:Label ID="_lblSUP_CD" runat="server" Text="후원회원" ShowHelp="True" HelpMessage="지정되지 않으면, 최상위 회원입니다." /></td>
 				<td class="inputCol"><bf:CodeHelper ID="_chSUP_CD" runat="server" CodeHelperType="SUPID" /></td>
 				<td class="infoCol"><bf:Label ID="Label1" runat="server" Text="주민등록번호" ShowHelp="True" HelpMessage="3-DES 암호화 되어서 저장됩니다." /></td>
-				<td class="inputCol"><bf:TextBox ID="TextBox3" runat="server" ImeMode="DashNumeric" MaxLength="14" /></td>
+				<td class="inputCol"><bf:TextBox ID="_txtMBR_JUMIN_NO" runat="server" ImeMode="DashNumeric" MaxLength="14" /></td>
 			</tr>
 			<tr>
 				<td class="infoCol">생년월일</td>
-				<td class="inputCol"><bf:DatePicker ID="DatePicker1" runat="server" /></td>
+				<td class="inputCol"><bf:DatePicker ID="_dpMBR_BIRTH_DT" runat="server" /></td>
 				<td class="infoCol"><bf:Label ID="Label2" runat="server" Text="휴대폰" ShowHelp="True" HelpMessage="3-DES 암호화 되어서 저장됩니다." /></td>
-				<td class="inputCol"><bf:TextBox ID="TextBox8" runat="server" ImeMode="DashNumeric" /></td>
+				<td class="inputCol"><bf:TextBox ID="_txtMBR_HPNO" runat="server" ImeMode="DashNumeric" /></td>
 				<td class="infoCol"><bf:Label ID="Label3" runat="server" Text="이메일" ShowHelp="True" HelpMessage="3-DES 암호화 되어서 저장됩니다." /></td>
-				<td class="inputCol"><bf:TextBox ID="TextBox9" runat="server" /></td>
+				<td class="inputCol"><bf:TextBox ID="_txtMBR_EMAIL" runat="server" /></td>
 			</tr>
 			<tr>
 				<td class="infoCol"><bf:Label ID="Label4" runat="server" Text="주소" ShowHelp="True" HelpMessage="3-DES 암호화 되어서 저장됩니다." /></td>
-				<td class="inputCol" colspan="5"><bf:TextBox ID="TextBox10" runat="server" Width="816px" /></td>
+				<td class="inputCol" colspan="5"><bf:TextBox ID="_txtMBR_ADDR" runat="server" Width="816px" /></td>
 			</tr>
 			<tr>
 				<td class="infoCol">거래은행</td>
@@ -69,7 +119,7 @@
 		<legend>명령수행</legend>
 		<div id="_dvSYSINFO" runat="server" class="infoSystem" />
 		<div class="infoCommand">
-			<bf:Button ID="_btnSave" runat="server" Text="저장" ButtonImage="Save" ButtonConfirm="True" ValidationGroup="Save" />
+			<bf:Button ID="_btnSave" runat="server" Text="저장" ButtonImage="Save" ButtonConfirm="True" ValidationGroup="Save" OnClick="_btnSave_Click" />
 			<!--
 			parent.closeModalPopup() 함수에 필요한 변수(들)를 던지면, 창이 닫혔다는 이벤트와 함께 목록 페이지에서 해당 변수들을 받을 수 있습니다.
 			-->

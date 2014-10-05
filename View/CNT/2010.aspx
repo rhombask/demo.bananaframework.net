@@ -21,9 +21,9 @@
 				var $login_id	= $(this);
 
 				// serializedData
-				var serializedData	= "UserID=" + encodeURIComponent($($login_id).val());
-				if (!$(this).is('[readonly]')) {
-					serializedData		+= "&UserCode=" + encodeURIComponent($("#<%=_txtCNT_CD.ClientID%>").val());
+				var serializedData	= "UserID=" + encodeURIComponent($($login_id).val()) + "&UserCode=";
+				if ($("#<%=_hfCNT_CD.ClientID%>").val() != "") {
+					serializedData		+= encodeURIComponent($("#<%=_txtCNT_CD.ClientID%>").val());
 				}
 
 				var request = $.ajax({
@@ -66,6 +66,7 @@
 	</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="_cphBody" runat="server">
+	<asp:HiddenField ID="_hfCNT_CD" runat="server" />
 	<fieldset>
 		<legend>대리점 기본정보</legend>
 		<table class="infoTable">
@@ -79,7 +80,7 @@
 			</tr>
 			<tr>
 				<td class="infoCol">로그인아이디</td>
-				<td class="inputCol"><bf:TextBox ID="_txtCNT_ID" runat="server" Compulsory="True" ValidationGroup="Save" /></td>
+				<td class="inputCol"><bf:TextBox ID="_txtCNT_ID" runat="server" Compulsory="True" ValidationGroup="Save" MaxLength="10" /></td>
 				<td class="infoCol"><bf:Label ID="Label7" runat="server" Text="비밀번호" ShowHelp="True" HelpMessage="3-DES 암호화 되어서 저장됩니다." /></td>
 				<td class="inputCol"><bf:TextBox ID="_txtPWD" runat="server" Compulsory="True" ValidationGroup="Save" /></td>
 				<td class="infoCol">해제일자</td>

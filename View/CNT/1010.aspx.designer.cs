@@ -13,6 +13,15 @@ namespace demo.bananaframework.net.View.CNT {
     public partial class _1010 {
         
         /// <summary>
+        /// _hfCNT_CD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField _hfCNT_CD;
+        
+        /// <summary>
         /// _txtCNT_CD control.
         /// </summary>
         /// <remarks>
