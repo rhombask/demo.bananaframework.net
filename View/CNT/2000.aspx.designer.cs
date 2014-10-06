@@ -13,6 +13,42 @@ namespace demo.bananaframework.net.View.CNT {
     public partial class _2000 {
         
         /// <summary>
+        /// _txtCNT_CD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.TextBox _txtCNT_CD;
+        
+        /// <summary>
+        /// _txtCNT_NM control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.TextBox _txtCNT_NM;
+        
+        /// <summary>
+        /// _txtSAUP_NO control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.TextBox _txtSAUP_NO;
+        
+        /// <summary>
+        /// _btnSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.Button _btnSearch;
+        
+        /// <summary>
         /// _btnNew control.
         /// </summary>
         /// <remarks>
@@ -20,5 +56,50 @@ namespace demo.bananaframework.net.View.CNT {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::BANANA.Web.Controls.Button _btnNew;
+        
+        /// <summary>
+        /// _txtPRSDNT_NM control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.TextBox _txtPRSDNT_NM;
+        
+        /// <summary>
+        /// _txtPRSDNT_HPNO control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.TextBox _txtPRSDNT_HPNO;
+        
+        /// <summary>
+        /// _dpSTRT control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.DatePicker _dpSTRT;
+        
+        /// <summary>
+        /// _dpEND control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.DatePicker _dpEND;
+        
+        /// <summary>
+        /// FixedGrid1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BANANA.Web.Controls.FixedGrid FixedGrid1;
     }
 }

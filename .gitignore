@@ -154,3 +154,7 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/BANANA.Common.amlic
+/BANANA.International.amlic
+/BANANA.Web.amlic
+/BANANA.Web.Controls.amlic

@@ -11,8 +11,8 @@
 			$("#<%=_btnNew.ContainerID%>").HideIndicator();
 
 			// 부모창에 모달 윈도우 뛰우기
-			parent.openModalPopup(url, 1100, 700, function (args) {
-				alert(args);
+			parent.openModalPopup(url, 1000, 550, function (args) {
+				//alert(args);
 			});
         }
 	</script>
@@ -23,54 +23,48 @@
 		<table class="gridSearch">
 			<tr>
 				<td class="searchLabel">지사코드</td>
-				<td class="searchObject"><bf:TextBox ID="_txtMBR_CD" runat="server" /></td>
+				<td class="searchObject"><bf:TextBox ID="_txtCNT_CD" runat="server" /></td>
 				<td class="searchLabel">지사명</td>
-				<td class="searchObject"><bf:TextBox ID="_txtMBR_NM" runat="server" /></td>
-				<td class="searchLabel">휴대폰번호</td>
-				<td class="searchObject"><bf:TextBox ID="_txtCNTR_HPNO" runat="server" /></td>
-			</tr>
-			<tr>
-				<td class="searchLabel">계약자명</td>
-				<td class="searchObject"><bf:TextBox ID="_txtCNTR_NM" runat="server" /></td>
-				<td class="searchButton" colspan="4">
-					<bf:Button ID="_btnSearch" runat="server" Text="검색" />
+				<td class="searchObject"><bf:TextBox ID="_txtCNT_NM" runat="server" /></td>
+				<td class="searchLabel">사업자등록번호</td>
+				<td class="searchObject"><bf:TextBox ID="_txtSAUP_NO" runat="server" /></td>
+				<td class="searchButton" rowspan="2" style="width:130px;">
+					<bf:Button ID="_btnSearch" runat="server" Text="검색" OnClick="_btnSearch_Click" />
 					<bf:Button ID="_btnNew" runat="server" ButtonImage="New" Text="지사등록" OnClientClick="javascript:openPage('');" />
 				</td>
+			</tr>
+			<tr>
+				<td class="searchLabel">대표자명</td>
+				<td class="searchObject"><bf:TextBox ID="_txtPRSDNT_NM" runat="server" /></td>
+				<td class="searchLabel">대표자휴대폰</td>
+				<td class="searchObject"><bf:TextBox ID="_txtPRSDNT_HPNO" runat="server" /></td>
+				<td class="searchLabel">등록일자</td>
+				<td class="searchObject"><bf:DatePicker ID="_dpSTRT" runat="server" /> ~ <bf:DatePicker ID="_dpEND" runat="server" /></td>
 			</tr>
 		</table>
 	</fieldset>
 	<fieldset id="result">
 		<legend>검색결과</legend>
 		<bf:FixedGrid ID="FixedGrid1" runat="server" Dock="Fill" FixedColumn="3" ShowRowNumber="true" AllowPaging="true" OnPageIndexChanged="FixedGrid1_PageIndexChanged" OnPageSizeChanged="FixedGrid1_PageSizeChanged" PageSize="50,100,300,500" OnExcelClicked="FixedGrid1_ExcelClicked" ShowExcel="True">
-			<bf:BoundDataField ID="REGDT" DataTextField="REGDT" HeaderText="등록일자" HorizontalAlignment="Center" />
-			<bf:TemplateField ID="MBR_CD" HeaderText="지사아이디" HorizontalAlignment="Center">
+			<bf:TemplateField HeaderText="지사코드" HorizontalAlignment="Center" Width="80px">
 				<ItemTemplate>
-					<bf:HyperLink runat="server" Text='<%# Eval("MBR_CD") %>' />
+					<bf:HyperLink runat="server" Text='<%# Eval("CNT_CD") %>' NavigateUrl='<%# string.Format("javascript:openPage(&#39;{0}&#39;);", Eval("CNT_CD")) %>' />
 				</ItemTemplate>
 			</bf:TemplateField>
-			<bf:BoundDataField ID="MBR_NM" DataTextField="MBR_NM" HeaderText="지사명" HorizontalAlignment="Center" />
-			<bf:BoundDataField ID="CNTR_NM" DataTextField="CNTR_NM" HeaderText="계약자명" HorizontalAlignment="Center" />
-			<bf:BoundDataField ID="CNTR_HPNO" DataTextField="CNTR_HPNO" HeaderText="계약자휴대폰" HorizontalAlignment="Center" />
-			<bf:BoundDataField ID="SAUP_NO" DataTextField="SAUP_NO" HeaderText="사업자등록번호" HorizontalAlignment="Center" />
-			<bf:TemplateField HeaderText="대리점수" HorizontalAlignment="Right" Width="60px">
-				<ItemTemplate>
-					<bf:HyperLink runat="server" Text='<%# Eval("AGNT_CNT") %>' />
-				</ItemTemplate>
-			</bf:TemplateField>
-			<bf:TemplateField HeaderText="가맹점수" HorizontalAlignment="Right" Width="60px">
-				<ItemTemplate>
-					<bf:HyperLink runat="server" Text='<%# Eval("AFF_CNT") %>' />
-				</ItemTemplate>
-			</bf:TemplateField>
-			<bf:TemplateField HeaderText="기기보유수" HorizontalAlignment="Right" Width="60px">
-				<ItemTemplate>
-					<bf:HyperLink ID="HyperLink3" runat="server" Text='<%# Eval("DVC_CNT") %>' />
-				</ItemTemplate>
-			</bf:TemplateField>
-			<bf:BoundDataField DataTextField="SYSREGDATE" HeaderText="등록일" HorizontalAlignment="Center" Width="140px" />
-			<bf:BoundDataField DataTextField="SYSREGNAME" HeaderText="등록자" HorizontalAlignment="Center" Width="140px" />
-			<bf:BoundDataField DataTextField="SYSMODDATE" HeaderText="수정일" HorizontalAlignment="Center" Width="140px" />
-			<bf:BoundDataField DataTextField="SYSMODNAME" HeaderText="수정자" HorizontalAlignment="Center" Width="140px" />
+			<bf:BoundDataField DataTextField="CNT_NM" HeaderText="지사명" />
+			<bf:BoundDataField DataTextField="REGDT" HeaderText="등록일자" HorizontalAlignment="Center" Width="70px" />
+			<bf:BoundDataField DataTextField="CNCDT" HeaderText="해제일자" HorizontalAlignment="Center" Width="70px" />
+			<bf:BoundDataField DataTextField="CNT_ID" HeaderText="로그인아이디" />
+			<bf:BoundDataField DataTextField="PRSDNT_NM" HeaderText="대표자명" HorizontalAlignment="Center" Width="60px" />
+			<bf:BoundDataField DataTextField="PRSDNT_HPNO" HeaderText="대표자휴대폰" HorizontalAlignment="Center" Width="90px" />
+			<bf:BoundDataField DataTextField="SAUP_NO" HeaderText="사업자등록번호" HorizontalAlignment="Center" Width="100px" />
+			<bf:BoundDataField DataTextField="BK_NM" HeaderText="은행명" />
+			<bf:BoundDataField DataTextField="BK_ACCT_NO" HeaderText="계좌번호" />
+			<bf:BoundDataField DataTextField="BK_OWNER" HeaderText="예금주" />
+			<bf:BoundDataField DataTextField="SYSREGDATE" HeaderText="시스템등록일" HorizontalAlignment="Center" Width="150px" />
+			<bf:BoundDataField DataTextField="SYSREGNAME" HeaderText="시스템등록자" HorizontalAlignment="Center" Width="130px" />
+			<bf:BoundDataField DataTextField="SYSMODDATE" HeaderText="시스템수정일" HorizontalAlignment="Center" Width="150px" />
+			<bf:BoundDataField DataTextField="SYSMODNAME" HeaderText="시스템수정자" HorizontalAlignment="Center" Width="130px" />
 		</bf:FixedGrid>
 	</fieldset>
 </asp:Content>

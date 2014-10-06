@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 
@@ -11,13 +12,13 @@ namespace demo.bananaframework.net.Control
 	public class BasePage : BANANA.Web.BasePage
 	{
 		// Value 반환
-		#region GetInteger : 정수형 반환
+		#region GetNullableInteger : Null 가능형 정수 반환
 		/// <summary>
-		/// 정수형 반환
+		/// Null 가능형 정수 반환
 		/// </summary>
 		/// <param name="_textBox"></param>
 		/// <returns></returns>
-		public int? GetInteger(BANANA.Web.Controls.TextBox _textBox)
+		public int? GetNullableInteger(BANANA.Web.Controls.TextBox _textBox)
 		{
 			if (_textBox.Text.Trim() == "")
 			{
@@ -30,13 +31,13 @@ namespace demo.bananaframework.net.Control
 		}
 		#endregion
 
-		#region GetDecimal : 소수형 반환
+		#region GetNullableDecimal : Null 가능형 소수 반환
 		/// <summary>
-		/// 소수형 반환
+		/// Null 가능형 소수 반환
 		/// </summary>
 		/// <param name="_textBox"></param>
 		/// <returns></returns>
-		public decimal? GetDecimal(BANANA.Web.Controls.TextBox _textBox)
+		public decimal? GetNullableDecimal(BANANA.Web.Controls.TextBox _textBox)
 		{
 			if (_textBox.Text.Trim() == "")
 			{
@@ -45,6 +46,70 @@ namespace demo.bananaframework.net.Control
 			else
 			{
 				return Convert.ToDecimal(_textBox.Text.Trim());
+			}
+		}
+		#endregion
+
+		#region GetNullableValue : Null 가능형 값 반환
+		/// <summary>
+		/// Null 가능형 값 반환
+		/// </summary>
+		/// <param name="_dropDownList"></param>
+		/// <returns></returns>
+		public string GetNullableValue(BANANA.Web.Controls.DropDownList _dropDownList)
+		{
+			if (_dropDownList.SelectedValue == null)
+			{
+				return null;
+			}
+			else
+			{
+				if (_dropDownList.SelectedValue == "")
+				{
+					return null;
+				}
+				else
+				{
+					return _dropDownList.SelectedValue;
+				}
+			}
+		}
+		#endregion
+
+		#region GetNullableValue : Null 가능형 값 반환
+		/// <summary>
+		/// Null 가능형 값 반환
+		/// </summary>
+		/// <param name="_dropDownList"></param>
+		/// <returns></returns>
+		public string GetNullableValue(BANANA.Web.Controls.TextBox _textBox)
+		{
+			if (_textBox.Text == null)
+			{
+				return null;
+			}
+			else
+			{
+				return _textBox.Text;
+			}
+		}
+		#endregion
+
+		#region GetNullableValue : Null 가능형 값 반환
+		/// <summary>
+		/// Null 가능형 값 반환
+		/// </summary>
+		/// <param name="_dropDownList"></param>
+		/// <returns></returns>
+		public string GetNullableValue(BANANA.Web.Controls.CodeHelper _codeHelper)
+		{
+			if (_codeHelper.TotalCode == "")
+			{
+				return null;
+			}
+			else
+			{
+				return _codeHelper.TotalCode;
 			}
 		}
 		#endregion
@@ -73,6 +138,27 @@ namespace demo.bananaframework.net.Control
 			}
 
 			return _retValue;
+		}
+		#endregion
+
+		#region SerializeTable : 데이터테이블 직력화
+		/// <summary>
+		/// 데이터테이블 직력화
+		/// </summary>
+		/// <param name="table"></param>
+		/// <returns></returns>
+		public static IEnumerable<Dictionary<string, object>> SerializeTable(DataTable table)
+		{
+			return table.DefaultView.OfType<DataRowView>().Select(row =>
+			{
+				var result = new Dictionary<string, object>();
+				foreach (DataColumn column in table.Columns)
+				{
+					result.Add(column.ColumnName, row.Row[column.ColumnName]);
+				}
+
+				return result;
+			});
 		}
 		#endregion
 	}

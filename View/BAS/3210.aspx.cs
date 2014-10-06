@@ -80,13 +80,13 @@ namespace demo.bananaframework.net.View.BAS
                         , _lblMAIN_CODE.Text			// 메인코드
                         , _txtCODE_NAME.Text			// 코드명
                         , _chkDISPLAYYN.Checked			// 사용여부
-                        , base.GetInteger(_txtORDERBY)	// 순서
+                        , base.GetNullableInteger(_txtORDERBY)	// 순서
                         , _txtBIGO1.Text				// 비고1
                         , _txtBIGO2.Text				// 비고2
                         , _txtBIGO3.Text				// 비고3
-                        , base.GetDecimal(_txtBIGO4)	// 비고4
-                        , base.GetDecimal(_txtBIGO5)	// 비고5
-                        , base.GetDecimal(_txtBIGO6)	// 비고6
+                        , base.GetNullableDecimal(_txtBIGO4)	// 비고4
+                        , base.GetNullableDecimal(_txtBIGO5)	// 비고5
+                        , base.GetNullableDecimal(_txtBIGO6)	// 비고6
                         , string.Empty                  // 비고
                         , base.GetCookie("UserID")		// 시스템등록자ID
                         , base.GetCookie("UserName")	// 시스템등록자명
@@ -102,13 +102,13 @@ namespace demo.bananaframework.net.View.BAS
                         , _lblSUB_CODE.Text				// 서브코드
                         , _txtCODE_NAME.Text			// 코드명
                         , _chkDISPLAYYN.Checked			// 사용여부
-                        , base.GetInteger(_txtORDERBY)	// 순서
+                        , base.GetNullableInteger(_txtORDERBY)	// 순서
                         , _txtBIGO1.Text				// 비고1
                         , _txtBIGO2.Text				// 비고2
                         , _txtBIGO3.Text				// 비고3
-                        , base.GetDecimal(_txtBIGO4)	// 비고4
-                        , base.GetDecimal(_txtBIGO5)	// 비고5
-                        , base.GetDecimal(_txtBIGO6)	// 비고6
+                        , base.GetNullableDecimal(_txtBIGO4)	// 비고4
+                        , base.GetNullableDecimal(_txtBIGO5)	// 비고5
+                        , base.GetNullableDecimal(_txtBIGO6)	// 비고6
                         , base.GetCookie("UserID")		// 시스템수정자ID
                         , base.GetCookie("UserName")	// 시스템수정자명
                         );

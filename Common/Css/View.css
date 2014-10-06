@@ -15,6 +15,6 @@ fieldset{margin-bottom:10px;border:solid 1px #e5e5e5;}
 /* 등록폼 */
 .infoTable{width:100%;line-height:15px;background-color:#f0f0f0;border-top:solid 2px #fda628;border-collapse:collapse;}
 .infoTable .infoCol{height:25px;font-family:Dotum,Tahoma;font-size:11px;font-weight:bold;color:#555555;border-left:solid 1px #d1d1d1;border-right:solid 1px #d1d1d1;border-bottom:solid 1px #d1d1d1;text-align:center;}
-.infoTable .inputCol{height:25px;background-color:#ffffff;border-right:solid 1px #d1d1d1;border-bottom:solid 1px #d1d1d1;padding-left:3px;}
-.infoSystem{text-align:left;margin-top:12px;float:left;font-size:8pt;}
-.infoCommand{text-align:right;margin-top:10px;float:right;}
+.infoTable .inputCol{height:25px;background-color:#ffffff;border-right:solid 1px #d1d1d1;border-bottom:solid 1px #d1d1d1;padding-left:3px;text-align:left;}
+.infoSystem{text-align:left;margin-top:5px;float:left;font-size:8pt;}
+.infoCommand{text-align:right;float:right;}
