@@ -79,6 +79,7 @@
   <ItemGroup>
     <Content Include="Common\404.aspx" />
     <Content Include="Common\500.aspx" />
+    <Content Include="Common\BusinessNo.aspx" />
     <Content Include="Common\Css\default.css" />
     <Content Include="Common\Css\Error.css" />
     <Content Include="Common\Css\jquery-ui.css" />
@@ -143,6 +144,10 @@
     <Content Include="Library\ja-JP\BANANA.International.resources.dll" />
     <Content Include="Library\ko-KR\BANANA.International.resources.dll" />
     <Content Include="Library\zh-CN\BANANA.International.resources.dll" />
+    <Content Include="View\ACC\1000.aspx" />
+    <Content Include="View\ACC\2000.aspx" />
+    <Content Include="View\ACC\3000.aspx" />
+    <Content Include="View\ACC\정산관리.txt" />
     <Content Include="View\BAS\1000.aspx" />
     <Content Include="View\BAS\1010.aspx" />
     <Content Include="View\BAS\1020.aspx" />
@@ -155,6 +160,7 @@
     <Content Include="View\BAS\3300.aspx" />
     <Content Include="View\BAS\3400.aspx" />
     <Content Include="View\BAS\3410.aspx" />
+    <Content Include="View\BAS\3500.aspx" />
     <Content Include="View\BAS\기준정보관리.txt" />
     <Content Include="View\CNT\1000.aspx" />
     <Content Include="View\CNT\1010.aspx" />
@@ -164,7 +170,15 @@
     <Content Include="View\Home.aspx" />
     <Content Include="View\MBR\1000.aspx" />
     <Content Include="View\MBR\1010.aspx" />
+    <Content Include="View\MBR\2000.aspx" />
+    <Content Include="View\MBR\3000.aspx" />
     <Content Include="View\MBR\회원관리.txt" />
+    <Content Include="View\PRD\1000.aspx" />
+    <Content Include="View\PRD\2000.aspx" />
+    <Content Include="View\PRD\상품관리.txt" />
+    <Content Include="View\SLS\1000.aspx" />
+    <Content Include="View\SLS\2000.aspx" />
+    <Content Include="View\SLS\매출관리.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -184,8 +198,18 @@
     <Compile Include="Common\500.aspx.designer.cs">
       <DependentUpon>500.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Common\BusinessNo.aspx.cs">
+      <DependentUpon>BusinessNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\BusinessNo.aspx.designer.cs">
+      <DependentUpon>BusinessNo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Control\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\CheckDuplicatedLoginID.ashx.cs">
+      <DependentUpon>CheckDuplicatedLoginID.ashx</DependentUpon>
     </Compile>
     <Compile Include="Control\Extensions.cs" />
     <Compile Include="Control\MasterPage.cs">
@@ -241,6 +265,27 @@
       <DependentUpon>Find-my-id-and-password.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\ACC\1000.aspx.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\ACC\1000.aspx.designer.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\ACC\2000.aspx.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\ACC\2000.aspx.designer.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\ACC\3000.aspx.cs">
+      <DependentUpon>3000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\ACC\3000.aspx.designer.cs">
+      <DependentUpon>3000.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\BAS\1000.aspx.cs">
       <DependentUpon>1000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -325,6 +370,13 @@
     <Compile Include="View\BAS\3410.aspx.designer.cs">
       <DependentUpon>3410.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\BAS\3500.aspx.cs">
+      <DependentUpon>3500.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\BAS\3500.aspx.designer.cs">
+      <DependentUpon>3500.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\CNT\1000.aspx.cs">
       <DependentUpon>1000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -374,11 +426,54 @@
     <Compile Include="View\MBR\1010.aspx.designer.cs">
       <DependentUpon>1010.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\MBR\2000.aspx.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\MBR\2000.aspx.designer.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\MBR\3000.aspx.cs">
+      <DependentUpon>3000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\MBR\3000.aspx.designer.cs">
+      <DependentUpon>3000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\PRD\1000.aspx.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\PRD\1000.aspx.designer.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\PRD\2000.aspx.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\PRD\2000.aspx.designer.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\SLS\1000.aspx.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\SLS\1000.aspx.designer.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\SLS\2000.aspx.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\SLS\2000.aspx.designer.cs">
+      <DependentUpon>2000.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.md" />
     <Content Include="Control\Web.Master" />
     <Content Include="Control\Popup.Master" />
+    <Content Include="Control\CheckDuplicatedLoginID.ashx" />
     <None Include="Properties\PublishProfiles\deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
