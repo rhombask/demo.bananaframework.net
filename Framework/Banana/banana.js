@@ -44,9 +44,30 @@ $(document).ready(function () {
 	// 홈 탭 추가
 	createTab("HOME", "HOME", "/View/Home.aspx", "HOME");
 
-	// 탭 닫기 버튼 이벤트
+	// 모든 탭 닫기 버튼 이벤트
 	$("#tabClose").click(function () {
-		closeCurrentTab();
+		for (var i = $("span").filter(".tab").length - 1; i > 0; i--) {
+			// 탭 ID 정의
+			var tabId	= $("span").filter(".tab")[i].id;
+			if (tabId == "s_HOME") {
+				continue;
+			}
+			
+			// 아이프레임 ID 정의
+			var ifId	= $("span").filter(".tab")[i].id.replace("s_", "if_");
+			
+			// 탭 컨트롤 제거
+			$("#" + tabId).remove();
+
+			// 아이프레임 제거
+			$("#" + ifId).remove();
+		}
+
+		// HOME 탭 선택하기
+		$("span#s_HOME").addClass("on");
+
+		// HOME 탭 보이기
+		$("iframe#HOME").show();
 	});
 });
 

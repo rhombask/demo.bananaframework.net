@@ -66,9 +66,7 @@
 		</div>
 		<div id="frTabs">
 			<div style="float: right; margin: 5px 3px 0 0;">
-				<%--<input type="button" class="ui-icon ui-icon-circle-triangle-w" style="margin-right: -5px;" />
-				<input type="button" class="ui-icon ui-icon-circle-triangle-e" style="margin-right: -5px;" />--%>
-				<input type="button" id="tabClose" class="ui-icon ui-icon-circle-close" style="margin-right: -5px;" />
+				<input type="button" id="tabClose" class="ui-icon ui-icon-circle-close" style="margin-right: -5px;" title="모든 탭 닫기" />
 			</div>
 		</div>
 		<div id="frMain"></div>
