@@ -13,6 +13,34 @@
 	<script src="/Framework/Banana/banana.js" type="text/javascript"></script>
 	<script src="/Framework/Common/Common.js" type="text/javascript"></script>
 	<script src="/Framework/Common/clock.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		// 백스페이스 입력 시, 로그인 화면으로 돌아가는 오류 해결
+		$(document).unbind("keydown").bind("keydown", function (event) {
+			var doPrevent = false;
+			if (event.keyCode === 8) {
+				var d = event.srcElement || event.target;
+				if ((d.tagName.toUpperCase() === "INPUT" &&
+					 (
+						 d.type.toUpperCase() === "TEXT" ||
+						 d.type.toUpperCase() === "PASSWORD" ||
+						 d.type.toUpperCase() === "FILE" ||
+						 d.type.toUpperCase() === "EMAIL" ||
+						 d.type.toUpperCase() === "SEARCH" ||
+						 d.type.toUpperCase() === "DATE")
+					 ) ||
+					 d.tagName.toUpperCase() === "TEXTAREA") {
+					doPrevent = d.readOnly || d.disabled;
+				}
+				else {
+					doPrevent = true;
+				}
+			}
+
+			if (doPrevent) {
+				event.preventDefault();
+			}
+		});
+	</script>
 </head>
 <body>
 	<form id="form1" runat="server">
