@@ -37,7 +37,7 @@ namespace demo.bananaframework.net.Control.Xenon {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UserControl TopMenu;
+        protected global::demo.bananaframework.net.Control.Xenon.TopMenu TopMenu;
         
         /// <summary>
         /// _cphContent control.
@@ -55,7 +55,7 @@ namespace demo.bananaframework.net.Control.Xenon {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UserControl Footer;
+        protected global::demo.bananaframework.net.Control.Xenon.Footer Footer;
         
         /// <summary>
         /// ChatPanel control.
@@ -64,7 +64,7 @@ namespace demo.bananaframework.net.Control.Xenon {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UserControl ChatPanel;
+        protected global::demo.bananaframework.net.Control.Xenon.ChatPanel ChatPanel;
         
         /// <summary>
         /// _cphModalArea control.

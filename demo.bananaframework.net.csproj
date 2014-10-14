@@ -980,6 +980,8 @@
     <Content Include="Default.aspx" />
     <Content Include="Framework\Coconut\Default.aspx" />
     <Content Include="Framework\Coconut\menu.xml" />
+    <Content Include="Images\logo%402x.png" />
+    <Content Include="Images\logo-collapsed%402x.png" />
     <Content Include="Images\logo-white-bg%402x.png" />
     <Content Include="__Default.aspx" />
     <Content Include="Framework\Banana\banana.css" />

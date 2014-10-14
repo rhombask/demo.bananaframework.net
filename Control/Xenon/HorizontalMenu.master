@@ -1,8 +1,8 @@
-﻿<%@ Master Language="C#" MasterPageFile="~/Control/Xenon.Master" AutoEventWireup="true" CodeBehind="HorizontalMenu.master.cs" Inherits="demo.bananaframework.net.Control.Xenon.HorizontalMenu" %>
+﻿<%@ Master Language="C#" MasterPageFile="~/Control/Xenon/Xenon.Master" AutoEventWireup="true" CodeBehind="HorizontalMenu.master.cs" Inherits="demo.bananaframework.net.Control.Xenon.HorizontalMenu" %>
 
-<%@ Register Src="~/Control/TopMenu.ascx" TagPrefix="uc1" TagName="TopMenu" %>
-<%@ Register Src="~/Control/ChatPanel.ascx" TagPrefix="uc1" TagName="ChatPanel" %>
-<%@ Register Src="~/Control/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+<%@ Register Src="~/Control/Xenon/TopMenu.ascx" TagPrefix="uc1" TagName="TopMenu" %>
+<%@ Register Src="~/Control/Xenon/ChatPanel.ascx" TagPrefix="uc1" TagName="ChatPanel" %>
+<%@ Register Src="~/Control/Xenon/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="_cphHead" runat="server">
 	<asp:ContentPlaceHolder ID="_cphHead" runat="server" />
