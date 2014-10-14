@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menus>
+	<menu text="Dashboard" navigateUrl="/dashboard-1.aspx" icon="linecons-cog">
+		<menu text="Dashboard 1" navigateUrl="/dashboard-1.aspx" icon="linecons-cog"></menu>
+		<menu text="Dashboard 2" navigateUrl="/dashboard-2.aspx"></menu>
+		<menu text="Dashboard 3" navigateUrl="/dashboard-3.aspx"></menu>
+		<menu text="Dashboard 4" navigateUrl="/dashboard-4.aspx"></menu>
+		<menu text="Skin Generator" navigateUrl="/skin-generator.aspx"></menu>
+		<menu text="Various Skins" navigateUrl="#">
+			<menu text="Skin Aero" navigateUrl="/skin-aero.aspx"></menu>
+			<menu text="Skin Concrete" navigateUrl="/skin-concrete.aspx"></menu>
+			<menu text="Skin Facebook" navigateUrl="/skin-facebook.aspx"></menu>
+			<menu text="Skin Green" navigateUrl="/skin-green.aspx"></menu>
+			<menu text="Skin Lemonade" navigateUrl="/skin-lemonade.aspx"></menu>
+			<menu text="Skin Lime" navigateUrl="/skin-lime.aspx"></menu>
+			<menu text="Skin Navy" navigateUrl="/skin-navy.aspx"></menu>
+			<menu text="Skin Purple" navigateUrl="/skin-purple.aspx"></menu>
+			<menu text="Skin Watermelon" navigateUrl="/skin-watermelon.aspx"></menu>
+			<menu text="Skin White" navigateUrl="/skin-white.aspx"></menu>
+			<menu text="Skin Horizontal Aero" navigateUrl="/skin-horizontal-aero.aspx"></menu>
+			<menu text="Skin Horizontal Concrete" navigateUrl="/skin-horizontal-concrete.aspx"></menu>
+			<menu text="Skin Horizontal Facebook" navigateUrl="/skin-horizontal-facebook.aspx"></menu>
+			<menu text="Skin Horizontal Green" navigateUrl="/skin-horizontal-green.aspx"></menu>
+			<menu text="Skin Horizontal Lemonade" navigateUrl="/skin-horizontal-lemonade.aspx"></menu>
+			<menu text="Skin Horizontal Lime" navigateUrl="/skin-horizontal-lime.aspx"></menu>
+			<menu text="Skin Horizontal Navy" navigateUrl="/skin-horizontal-navy.aspx"></menu>
+			<menu text="Skin Horizontal Purple" navigateUrl="/skin-horizontal-purple.aspx"></menu>
+			<menu text="Skin Horizontal Watermelon" navigateUrl="/skin-horizontal-watermelon.aspx"></menu>
+			<menu text="Skin Horizontal White" navigateUrl="/skin-horizontal-white.aspx"></menu>
+		</menu>
+	</menu>
+	<menu text="Layouts" navigateUrl="#" icon="linecons-desktop">
+		<menu text="Layout Variants &amp; API" navigateUrl="/layout-variants.aspx"></menu>
+		<menu text="Collapsed Sidebar" navigateUrl="/layout-collapsed-sidebar.aspx"></menu>
+		<menu text="Static Sidebar" navigateUrl="/layout-static-sidebar.aspx"></menu>
+		<menu text="Horizontal Menu" navigateUrl="/layout-horizontal-menu.aspx"></menu>
+		<menu text="Horizontal &amp; Sidebar Menu" navigateUrl="/layout-horizontal-plus-sidebar.aspx"></menu>
+		<menu text="Horizontal Open On Click" navigateUrl="/layout-horizontal-menu-click-to-open-subs.aspx"></menu>
+		<menu text="Horizontal Menu Minimal" navigateUrl="/layout-horizontal-menu-min.aspx"></menu>
+		<menu text="Right Sidebar" navigateUrl="/layout-right-sidebar.aspx"></menu>
+		<menu text="Chat Open" navigateUrl="/layout-chat-open.aspx"></menu>
+		<menu text="Both Menus &amp; Collapsed" navigateUrl="/layout-horizontal-sidebar-menu-collapsed-right.aspx"></menu>
+		<menu text="Boxed Layout" navigateUrl="/layout-boxed.aspx"></menu>
+		<menu text="Boxed &amp; Horizontal Menu" navigateUrl="/layout-boxed-horizontal-menu.aspx"></menu>
+	</menu>
+	<menu text="UI Elements" navigateUrl="#" icon="linecons-note">
+		<menu text="Panels" navigateUrl="/ui-panels.aspx"></menu>
+		<menu text="Buttons" navigateUrl="/ui-buttons.aspx"></menu>
+		<menu text="Tabs &amp; Accordions" navigateUrl="/ui-tabs-accordions.aspx"></menu>
+		<menu text="Modals" navigateUrl="/ui-modals.aspx"></menu>
+		<menu text="Breadcrumbs" navigateUrl="/ui-breadcrumbs.aspx"></menu>
+		<menu text="Blockquotes" navigateUrl="/ui-blockquotes.aspx"></menu>
+		<menu text="Progress Bars" navigateUrl="/ui-progressbars.aspx"></menu>
+		<menu text="Navbars" navigateUrl="/ui-navbars.aspx"></menu>
+		<menu text="Alerts" navigateUrl="/ui-alerts.aspx"></menu>
+		<menu text="Pagination" navigateUrl="/ui-pagination.aspx"></menu>
+		<menu text="Typography" navigateUrl="/ui-typography.aspx"></menu>
+		<menu text="Other Elements" navigateUrl="/ui-other-elements.aspx"></menu>
+	</menu>
+	<menu text="Widgets" navigateUrl="/ui-widgets.aspx" icon="linecons-star">
+	</menu>
+	<menu text="Mailbox" navigateUrl="#" icon="linecons-star" itemClass="label label-success pull-right" itemName="5">
+		<menu text="Inbox" navigateUrl="/mailbox-main.aspx"></menu>
+		<menu text="Compose Message" navigateUrl="/mailbox-compose.aspx"></menu>
+		<menu text="View Message" navigateUrl="/mailbox-message.aspx"></menu>
+	</menu>
+	<menu text="Tables" navigateUrl="#" icon="linecons-database">
+		<menu text="Basic Tables" navigateUrl="/tables-basic.aspx"></menu>
+		<menu text="Responsive Table" navigateUrl="/tables-responsive.aspx"></menu>
+		<menu text="Data Tables" navigateUrl="/tables-datatables.aspx"></menu>
+	</menu>
+	<menu text="Forms" navigateUrl="#" icon="linecons-params">
+		<menu text="Native Elements" navigateUrl="/forms-native.aspx"></menu>
+		<menu text="Advanced Plugins" navigateUrl="/forms-advanced.aspx"></menu>
+		<menu text="Form Wizard" navigateUrl="/forms-wizard.aspx"></menu>
+		<menu text="Form Validation" navigateUrl="/forms-validation.aspx"></menu>
+		<menu text="Input Masks" navigateUrl="/forms-input-masks.aspx"></menu>
+		<menu text="File Upload" navigateUrl="/forms-file-upload.aspx"></menu>
+		<menu text="Editors" navigateUrl="/forms-editors.aspx"></menu>
+		<menu text="Sliders" navigateUrl="/forms-sliders.aspx"></menu>
+	</menu>
+	<menu text="Extra" navigateUrl="/extra-gallery.aspx" icon="linecons-beaker" itemClass="label label-purple pull-right hidden-collapsed" itemName="New Items">
+		<menu text="Icons" navigateUrl="#">
+			<menu text="Font Awesome" navigateUrl="/extra-icons-fontawesome.aspx"></menu>
+			<menu text="Linecons" navigateUrl="/extra-icons-linecons.aspx"></menu>
+			<menu text="Elusive" navigateUrl="/extra-icons-elusive.aspx"></menu>
+			<menu text="Meteocons" navigateUrl="/extra-icons-meteocons.aspx"></menu>
+		</menu>
+		<menu text="Maps" navigateUrl="#">
+			<menu text="Google Maps" navigateUrl="/extra-maps-google.aspx"></menu>
+			<menu text="Advanced Map" navigateUrl="/extra-maps-advanced.aspx"></menu>
+			<menu text="Vector Map" navigateUrl="/extra-maps-vector.aspx"></menu>
+		</menu>
+		<menu text="Gallery" navigateUrl="/extra-gallery.aspx"></menu>
+		<menu text="Calendar" navigateUrl="/extra-calendar.aspx"></menu>
+		<menu text="Profile" navigateUrl="/extra-profile.aspx"></menu>
+		<menu text="Login" navigateUrl="/extra-login.aspx"></menu>
+		<menu text="Lockscreen" navigateUrl="/extra-lockscreen.aspx"></menu>
+		<menu text="Login Light" navigateUrl="/extra-login-light.aspx"></menu>
+		<menu text="Timeline" navigateUrl="/extra-timeline.aspx"></menu>
+		<menu text="Timeline Centerd" navigateUrl="/extra-timeline-center.aspx"></menu>
+		<menu text="Notes" navigateUrl="/extra-notes.aspx"></menu>
+		<menu text="Image Crop" navigateUrl="/extra-image-crop.aspx"></menu>
+		<menu text="Portlets" navigateUrl="/extra-portlets.aspx"></menu>
+		<menu text="Blank Page" navigateUrl="/blank-sidebar.aspx"></menu>
+		<menu text="Search" navigateUrl="/extra-search.aspx"></menu>
+		<menu text="Invoice" navigateUrl="/extra-invoice.aspx"></menu>
+		<menu text="404 Page" navigateUrl="/extra-not-found.aspx"></menu>
+		<menu text="Tocify" navigateUrl="/extra-tocify.aspx"></menu>
+		<menu text="Loading Progress" navigateUrl="/extra-loader.aspx"></menu>
+		<menu text="Page Loading Overlay" navigateUrl="/extra-page-loading-ol.aspx"></menu>
+		<menu text="Notifications" navigateUrl="/extra-notifications.aspx"></menu>
+		<menu text="Nestable Lists" navigateUrl="/extra-nestable-lists.aspx"></menu>
+		<menu text="Scrollable" navigateUrl="/extra-scrollable.aspx"></menu>
+	</menu>
+	<menu text="Charts" navigateUrl="#" icon="linecons-globe">
+		<menu text="Chart Variants" navigateUrl="/charts-main.aspx"></menu>
+		<menu text="Range Selector" navigateUrl="/charts-range.aspx"></menu>
+		<menu text="Sparklines" navigateUrl="/charts-sparklines.aspx"></menu>
+		<menu text="Map Charts" navigateUrl="/charts-map.aspx"></menu>
+		<menu text="Circular Gauges" navigateUrl="/charts-gauges.aspx"></menu>
+		<menu text="Bar Gauges" navigateUrl="/charts-bar-gauges.aspx"></menu>
+	</menu>
+</menus>

@@ -978,6 +978,8 @@
     <Content Include="Control\Xenon\TopMenu.ascx" />
     <Content Include="Control\Xenon\UserInfo.ascx" />
     <Content Include="Default.aspx" />
+    <Content Include="Framework\Coconut\Default.aspx" />
+    <Content Include="Framework\Coconut\menu.xml" />
     <Content Include="Images\logo-white-bg%402x.png" />
     <Content Include="__Default.aspx" />
     <Content Include="Framework\Banana\banana.css" />
@@ -1190,6 +1192,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\Coconut\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Framework\Coconut\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="__Default.aspx.cs">
@@ -1573,7 +1582,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Framework\Coconut\" />
     <Folder Include="Framework\Kiwi\" />
     <Folder Include="Storage\" />
   </ItemGroup>
