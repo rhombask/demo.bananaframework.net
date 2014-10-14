@@ -978,6 +978,7 @@
     <Content Include="Control\Xenon\TopMenu.ascx" />
     <Content Include="Control\Xenon\UserInfo.ascx" />
     <Content Include="Default.aspx" />
+    <Content Include="__Default.aspx" />
     <Content Include="Framework\Banana\banana.css" />
     <Content Include="Framework\Banana\banana.js" />
     <Content Include="Framework\Banana\Default.aspx" />
@@ -1186,6 +1187,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="__Default.aspx.cs">
+      <DependentUpon>__Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="__Default.aspx.designer.cs">
+      <DependentUpon>__Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Framework\Banana\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
