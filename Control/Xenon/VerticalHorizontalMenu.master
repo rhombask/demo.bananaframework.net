@@ -4,6 +4,7 @@
 <%@ Register Src="~/Control/Xenon/SideMenu.ascx" TagPrefix="uc1" TagName="SideMenu" %>
 <%@ Register Src="~/Control/Xenon/ChatPanel.ascx" TagPrefix="uc1" TagName="ChatPanel" %>
 <%@ Register Src="~/Control/Xenon/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+<%@ Register Src="~/Control/Xenon/UserProfile.ascx" TagPrefix="uc1" TagName="UserProfile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="_cphHead" runat="server">
 	<asp:ContentPlaceHolder ID="_cphHead" runat="server" />
@@ -16,21 +17,7 @@
 		<div class="settings-pane-inner">
 			<div class="row">
 				<div class="col-md-4">
-					<div class="user-info">
-						<div class="user-image"><a href="extra-profile.aspx"><img src="/Images/user-2.png" class="img-responsive img-circle" /></a></div>
-						<div class="user-details">
-							<h3>
-								<a href="extra-profile.aspx">John Smith</a>
-								<!-- Available statuses: is-online, is-idle, is-busy and is-offline -->
-								<span class="user-status is-online"></span>
-							</h3>
-							<p class="user-title">Web Developer</p>
-							<div class="user-links">
-								<a href="extra-profile.aspx" class="btn btn-primary">Edit Profile</a>
-								<a href="extra-profile.aspx" class="btn btn-success">Upgrade</a>
-							</div>
-						</div>
-					</div>
+					<uc1:UserProfile runat="server" ID="UserProfile" />
 				</div>
 				<div class="col-md-8 link-blocks-env">
 					<div class="links-block left-sep">

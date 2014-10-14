@@ -24,7 +24,7 @@ namespace demo.bananaframework.net.Control.Xenon
 			string _retValue	= string.Empty;
 
 			#region Xml 메뉴를 담기
-			string xmlFile	= Server.MapPath("menu.xml");
+			string xmlFile	= Server.MapPath("/Framework/Coconut/menu.xml");
 			XDocument doc	= XDocument.Load(xmlFile);
 
 			/*
@@ -65,7 +65,7 @@ namespace demo.bananaframework.net.Control.Xenon
 			foreach (Menu menu in menus)
 			{
 				// 대메뉴
-				_retValue			+= string.Format("			<li{3}><a href=\"{0}\">{1}<span class=\"title\">{2}</span>{4}</a>"
+				_retValue			+= string.Format("			<li{3} title=\"{2}\"><a href=\"{0}\">{1}<span class=\"title\">{2}</span>{4}</a>"
 					, menu.NavigateUrl
 					, menu.Icon == "" ? "" : string.Format("<i class=\"{0}\"></i>", menu.Icon)
 					, menu.Text
@@ -105,7 +105,7 @@ namespace demo.bananaframework.net.Control.Xenon
 					}
 
 					// 중메뉴 이하
-					_retValue	+= string.Format("					<li{2}><a href=\"{0}\"><span class=\"title\">{1}</span></a>"
+					_retValue	+= string.Format("					<li{2} title=\"{1}\"><a href=\"{0}\"><span class=\"title\">{1}</span></a>"
 						, subMenu.NavigateUrl
 						, subMenu.Text
 						, IsSubmenuNavigated(subMenu)

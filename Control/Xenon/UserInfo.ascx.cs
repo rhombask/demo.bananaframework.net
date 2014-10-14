@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace demo.bananaframework.net.Control.Xenon
 {
-	public partial class UserInfo : System.Web.UI.UserControl
+	public partial class UserInfo : BANANA.Web.BaseControl
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
+			_ltUserName.Text	= base.GetCookie("UserName");
 		}
 	}
 }

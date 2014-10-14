@@ -10,6 +10,7 @@ namespace demo.bananaframework.net.Framework.Banana
 {
 	/// <summary>
 	/// 바나나 템플릿의 첫 페이지
+	/// 바나나 템플릿은 일반회원은 로그인할 수 없습니다.
 	/// </summary>
 	public partial class Default : Control.BasePage
 	{
@@ -23,7 +24,13 @@ namespace demo.bananaframework.net.Framework.Banana
 		{
 			if (!IsPostBack)
 			{
+				// 로그인 여부 확인
 				if (base.GetCookie("UserId") == "")
+				{
+					Response.Redirect("/Default.aspx", false);
+				}
+				// 일반회원 로그인 여부 확인
+				else if (base.GetCookie("UserGroupCode").Substring(0, 3) == "A02")
 				{
 					Response.Redirect("/Default.aspx", false);
 				}

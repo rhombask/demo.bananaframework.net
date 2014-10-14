@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace demo.bananaframework.net.Control.Xenon
 {
-	public partial class VerticalMenu : System.Web.UI.MasterPage
+	public partial class VerticalMenu : BANANA.Web.MasterPage
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

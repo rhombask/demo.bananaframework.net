@@ -31,6 +31,15 @@ namespace demo.bananaframework.net.Control.Xenon {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// UserProfile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::demo.bananaframework.net.Control.Xenon.UserProfile UserProfile;
+        
+        /// <summary>
         /// TopMenu control.
         /// </summary>
         /// <remarks>

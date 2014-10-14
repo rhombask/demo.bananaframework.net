@@ -8,7 +8,7 @@
 				<i class="fa-bars"></i>
 			</a>
 		</li>
-		<li class="dropdown hover-line">
+		<%--<li class="dropdown hover-line">
 			<a href="#" data-toggle="dropdown">
 				<i class="fa-envelope-o"></i>
 				<span class="badge badge-green">15</span>
@@ -16,11 +16,9 @@
 			<ul class="dropdown-menu messages">
 				<li>
 					<ul class="dropdown-menu-list list-unstyled ps-scrollbar">
-
 						<li class="active">
 							<!-- "active" class means message is unread -->
-							<a href="#">
-								<span class="line">
+							<a href="#"><span class="line">
 									<strong>Luc Chartier</strong>
 									<span class="light small">- yesterday</span>
 								</span>
@@ -125,12 +123,7 @@
 			</ul>
 		</li>
 
-		<li class="dropdown hover-line">
-			<a href="#" data-toggle="dropdown">
-				<i class="fa-bell-o"></i>
-				<span class="badge badge-purple">7</span>
-			</a>
-
+		<li class="dropdown hover-line"><a href="#" data-toggle="dropdown"><i class="fa-bell-o"></i><span class="badge badge-purple">7</span></a>
 			<ul class="dropdown-menu notifications">
 				<li class="top">
 					<p class="small">
@@ -225,7 +218,7 @@
 					</a>
 				</li>
 			</ul>
-		</li>
+		</li>--%>
 
 	</ul>
 
@@ -241,39 +234,14 @@
 		<li class="dropdown user-profile">
 			<a href="#" data-toggle="dropdown">
 				<img src="/Images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
-				<span>Arlind Nushi <i class="fa-angle-down"></i></span>
+				<span><asp:Literal ID="_ltUserName" runat="server" /> <i class="fa-angle-down"></i></span>
 			</a>
 			<ul class="dropdown-menu user-profile-menu list-unstyled">
-				<li>
-					<a href="#edit-profile">
-						<i class="fa-edit"></i>
-						New Post
-					</a>
-				</li>
-				<li>
-					<a href="#settings">
-						<i class="fa-wrench"></i>
-						Settings
-					</a>
-				</li>
-				<li>
-					<a href="#profile">
-						<i class="fa-user"></i>
-						Profile
-					</a>
-				</li>
-				<li>
-					<a href="#help">
-						<i class="fa-info"></i>
-						Help
-					</a>
-				</li>
-				<li class="last">
-					<a href="extra-lockscreen.aspx">
-						<i class="fa-lock"></i>
-						Logout
-					</a>
-				</li>
+				<%--<li><a href="#edit-profile"><i class="fa-edit"></i>New Post</a></li>
+				<li><a href="#settings"><i class="fa-wrench"></i>Settings</a></li>
+				<li><a href="#profile"><i class="fa-user"></i>Profile</a></li>
+				<li><a href="#help"><i class="fa-info"></i>Help</a></li>--%>
+				<li class="last"><a href="/Framework/Coconut/Logout.aspx"><i class="fa-lock"></i>Logout</a></li>
 			</ul>
 		</li>
 

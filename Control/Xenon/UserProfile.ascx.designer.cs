@@ -10,7 +10,7 @@
 namespace demo.bananaframework.net.Control.Xenon {
     
     
-    public partial class UserInfo {
+    public partial class UserProfile {
         
         /// <summary>
         /// _ltUserName control.
@@ -20,5 +20,14 @@ namespace demo.bananaframework.net.Control.Xenon {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal _ltUserName;
+        
+        /// <summary>
+        /// _ltJikupName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal _ltJikupName;
     }
 }

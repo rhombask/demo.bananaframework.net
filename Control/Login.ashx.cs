@@ -12,6 +12,7 @@ namespace demo.bananaframework.net.Control
 	/// </summary>
 	public class Login : IHttpHandler
 	{
+		#region ProcessRequest : 요청 함수
 		/// <summary>
 		/// 요청 함수
 		/// </summary>
@@ -69,6 +70,7 @@ namespace demo.bananaframework.net.Control
 			context.Response.ContentType = "application/json";
 			context.Response.Write(_retValue);
 		}
+		#endregion
 		
 		#region IsReusable
 		/// <summary>

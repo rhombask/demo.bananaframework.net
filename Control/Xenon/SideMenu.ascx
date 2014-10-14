@@ -7,8 +7,8 @@
 		<header class="logo-env">
 			<!-- logo -->
 			<div class="logo">
-				<a href="/dashboard-1.aspx" class="logo-expanded"><img src="/Images/logo@2x.png" style="width:80px;" alt="" /></a>
-				<a href="/dashboard-1.aspx" class="logo-collapsed"><img src="/Images/logo-collapsed@2x.png" style="width:40px;" alt="" /></a>
+				<a href="/Framework/Coconut/Default.aspx" class="logo-expanded"><img src="/Images/logo@2x.png" style="width:80px;" alt="" /></a>
+				<a href="/Framework/Coconut/Default.aspx" class="logo-collapsed"><img src="/Images/logo-collapsed@2x.png" style="width:40px;" alt="" /></a>
 			</div>
 			<!-- This will toggle the mobile menu and will be visible only on mobile devices -->
 			<div class="mobile-menu-toggle visible-xs">

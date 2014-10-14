@@ -23,7 +23,7 @@
 					"showMethod": "fadeIn",
 					"hideMethod": "fadeOut"
 				};
-				toastr.info("You have been awarded with 1 year free subscription. Enjoy it!", "Account Subcription Updated", opts);
+				toastr.info("<%=base.GetCookie("UserName")%>님, 반갑습니다. 즐거운 시간 보내세요.", opts);
 			}, 3000);
 			// Charts
 			var xenonPalette = ['#68b828', '#7c38bc', '#0e62c7', '#fcd036', '#4fcdfc', '#00b19d', '#ff6264', '#f7aa47'];
