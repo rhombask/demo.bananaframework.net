@@ -978,6 +978,7 @@
     <Content Include="Control\Xenon\TopMenu.ascx" />
     <Content Include="Control\Xenon\UserInfo.ascx" />
     <Content Include="Default.aspx" />
+    <Content Include="Images\logo-white-bg%402x.png" />
     <Content Include="__Default.aspx" />
     <Content Include="Framework\Banana\banana.css" />
     <Content Include="Framework\Banana\banana.js" />
@@ -1100,6 +1101,9 @@
       <DependentUpon>CheckDuplicatedLoginID.ashx</DependentUpon>
     </Compile>
     <Compile Include="Control\Extensions.cs" />
+    <Compile Include="Control\Login.ashx.cs">
+      <DependentUpon>Login.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Control\MasterPage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -1559,6 +1563,7 @@
     <Content Include="Control\Xenon\VerticalHorizontalMenu.master" />
     <Content Include="Control\Xenon\VerticalMenu.master" />
     <Content Include="Control\Xenon\Xenon.Master" />
+    <Content Include="Control\Login.ashx" />
     <None Include="Properties\PublishProfiles\deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

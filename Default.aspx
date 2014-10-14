@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Control/Xenon/Xenon.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="demo.bananaframework.net.Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="_cphHead" runat="server">
+	<script src="/Framework/Common/Common.js" type="text/javascript"></script>
 	<script src="/Common/Scripts/jquery-validate/jquery.validate.min.js"></script>
 	<script src="/Common/Scripts/toastr/toastr.min.js"></script>
 	<script type="text/javascript">
@@ -25,7 +26,7 @@
 				},
 				messages: {
 					username: {
-						required: "아이디를 입력하세요."
+						required: "이용자ID를 입력하세요."
 					},
 					passwd: {
 						required: "비밀번호를 입력하세요."
@@ -49,13 +50,13 @@
 						"hideMethod": "fadeOut"
 					};
 					$.ajax({
-						url: "data/login-check.php",
+						url: "/Control/Login.ashx",
 						method: 'POST',
 						dataType: 'json',
 						data: {
 							do_login: true,
-							username: $(form).find('#username').val(),
-							passwd: $(form).find('#passwd').val(),
+							userID: $(form).find("#userID").val(),
+							passwd: $(form).find("#passwd").val(),
 						},
 						success: function (resp) {
 							show_loading_bar({
@@ -63,21 +64,21 @@
 								pct: 100,
 								finish: function () {
 									// Redirect after successful login page (when progress bar reaches 100%)
-									if (resp.accessGranted) {
-										window.location.href = 'dashboard-1.html';
+									if (resp[0].GUBUN == "OK") {
+										window.location.href	= resp[0].Url;
 									}
 								}
 							});
 							// Remove any alert
 							$(".errors-container .alert").slideUp('fast');
 							// Show errors
-							if (resp.accessGranted == false) {
+							if (resp[0].GUBUN != "OK") {
 								$(".errors-container").html('<div class="alert alert-danger">\
 									<button type="button" class="close" data-dismiss="alert">\
 										<span aria-hidden="true">&times;</span>\
 										<span class="sr-only">Close</span>\
 									</button>\
-									' + resp.errors + '\
+									' + resp[0].Message + '\
 								</div>');
 								$(".errors-container .alert").hide().slideDown();
 								$(form).find('#passwd').select();
@@ -107,8 +108,8 @@
 					<p>정상적인 이용을 위해서는 시스템에 로그인 하셔야 합니다.</p>
 				</div>
 				<div class="form-group">
-					<label class="control-label" for="username">아이디</label>
-					<input type="text" class="form-control" name="username" id="username" autocomplete="off" />
+					<label class="control-label" for="userID">이용자ID</label>
+					<input type="text" class="form-control" name="userID" id="userID" autocomplete="off" />
 				</div>
 				<div class="form-group">
 					<label class="control-label" for="passwd">비밀번호</label>
@@ -121,12 +122,12 @@
 						</button>
 				</div>
 				<div class="login-footer">
-					<a href="#">Forgot your password?</a>
-					<div class="info-links">
+					<%--<a href="javascript:findIdAndPW();">아이디/비밀번호를 잊으셨나요?</a>--%>
+					<%--<div class="info-links">
 						<a href="#">ToS</a> -
 					
 						<a href="#">Privacy Policy</a>
-					</div>
+					</div>--%>
 				</div>
 				</form>
 				<!-- External login -->
