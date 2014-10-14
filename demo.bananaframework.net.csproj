@@ -972,6 +972,11 @@
     <Content Include="Common\Scripts\xenon-notes.js" />
     <Content Include="Common\Scripts\xenon-toggles.js" />
     <Content Include="Common\Scripts\xenon-widgets.js" />
+    <Content Include="Control\Xenon\ChatPanel.ascx" />
+    <Content Include="Control\Xenon\Footer.ascx" />
+    <Content Include="Control\Xenon\SideMenu.ascx" />
+    <Content Include="Control\Xenon\TopMenu.ascx" />
+    <Content Include="Control\Xenon\UserInfo.ascx" />
     <Content Include="Default.aspx" />
     <Content Include="Framework\Banana\banana.css" />
     <Content Include="Framework\Banana\banana.js" />
@@ -1110,6 +1115,70 @@
     </Compile>
     <Compile Include="Control\Web.Master.designer.cs">
       <DependentUpon>Web.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Xenon\ChatPanel.ascx.cs">
+      <DependentUpon>ChatPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Xenon\ChatPanel.ascx.designer.cs">
+      <DependentUpon>ChatPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Xenon\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Xenon\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Xenon\HorizontalMenu.master.cs">
+      <DependentUpon>HorizontalMenu.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Xenon\HorizontalMenu.master.designer.cs">
+      <DependentUpon>HorizontalMenu.master</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Xenon\Menu.cs" />
+    <Compile Include="Control\Xenon\SideMenu.ascx.cs">
+      <DependentUpon>SideMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Xenon\SideMenu.ascx.designer.cs">
+      <DependentUpon>SideMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Xenon\TopMenu.ascx.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Xenon\TopMenu.ascx.designer.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Xenon\UserInfo.ascx.cs">
+      <DependentUpon>UserInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Xenon\UserInfo.ascx.designer.cs">
+      <DependentUpon>UserInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Xenon\VerticalHorizontalMenu.master.cs">
+      <DependentUpon>VerticalHorizontalMenu.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Xenon\VerticalHorizontalMenu.master.designer.cs">
+      <DependentUpon>VerticalHorizontalMenu.master</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Xenon\VerticalMenu.master.cs">
+      <DependentUpon>VerticalMenu.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Xenon\VerticalMenu.master.designer.cs">
+      <DependentUpon>VerticalMenu.master</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Xenon\Xenon.Master.cs">
+      <DependentUpon>Xenon.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Xenon\Xenon.Master.designer.cs">
+      <DependentUpon>Xenon.Master</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -1478,6 +1547,10 @@
     <Content Include="Common\Scripts\uikit\less\uikit.less" />
     <Content Include="Common\Scripts\uikit\less\utility.less" />
     <Content Include="Common\Scripts\uikit\less\variables.less" />
+    <Content Include="Control\Xenon\HorizontalMenu.master" />
+    <Content Include="Control\Xenon\VerticalHorizontalMenu.master" />
+    <Content Include="Control\Xenon\VerticalMenu.master" />
+    <Content Include="Control\Xenon\Xenon.Master" />
     <None Include="Properties\PublishProfiles\deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

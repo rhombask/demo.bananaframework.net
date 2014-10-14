@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Xenon.Master.cs" Inherits="demo.bananaframework.net.Control.Xenon.Xenon" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Xenon Boostrap Admin Panel" />
+	<meta name="author" content="" />
+	<title></title>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic" />
+	<link rel="stylesheet" href="/Common/Fonts/linecons/css/linecons.css" />
+	<link rel="stylesheet" href="/Common/Fonts/fontawesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/Common/Css/bootstrap.css" />
+	<link rel="stylesheet" href="/Common/Css/xenon-core.css" />
+	<link rel="stylesheet" href="/Common/Css/xenon-forms.css" />
+	<link rel="stylesheet" href="/Common/Css/xenon-components.css" />
+	<link rel="stylesheet" href="/Common/Css/xenon-skins.css" />
+	<link rel="stylesheet" href="/Common/Css/custom.css" />
+
+	<script src="/Common/Scripts/jquery-1.11.1.min.js"></script>
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<asp:ContentPlaceHolder ID="_cphHead" runat="server" />
+</head>
+<body id="bodyNode" runat="server" class="page-body">
+	<asp:ContentPlaceHolder ID="_cphContent" runat="server" />
+	<!-- Bottom Scripts -->
+	<script src="/Common/Scripts/bootstrap.min.js"></script>
+	<script src="/Common/Scripts/TweenMax.min.js"></script>
+	<script src="/Common/Scripts/resizeable.js"></script>
+	<script src="/Common/Scripts/joinable.js"></script>
+	<script src="/Common/Scripts/xenon-api.js"></script>
+	<script src="/Common/Scripts/xenon-toggles.js"></script>
+
+	<!-- JavaScripts initializations and stuff -->
+	<script src="/Common/Scripts/xenon-custom.js"></script>
+	<asp:ContentPlaceHolder ID="_cphModalArea" runat="server" />
+</body>
+</html>
