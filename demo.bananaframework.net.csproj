@@ -59,6 +59,10 @@
       <HintPath>Library\BANANA.Web.Controls.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="OrganizationChart, Version=1.0.5401.36163, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\OrganizationChart.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -788,6 +792,26 @@
     <Content Include="Common\Scripts\multiselect\css\multi-select.css" />
     <Content Include="Common\Scripts\multiselect\img\switch.png" />
     <Content Include="Common\Scripts\multiselect\js\jquery.multi-select.js" />
+    <Content Include="Common\Scripts\primitives\jquery-ui-1.10.2.custom.min.js" />
+    <Content Include="Common\Scripts\primitives\primitives.latest.css" />
+    <Content Include="Common\Scripts\primitives\primitives.min.js" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\animated-overlay.gif" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Common\Scripts\primitives\ui-lightness\jquery-ui-1.10.2.custom.min.css" />
+    <Content Include="Common\Scripts\primitives\UserTemplates.js" />
     <Content Include="Common\Scripts\resizeable.js" />
     <Content Include="Common\Scripts\rwd-table\css\rwd-table.css" />
     <Content Include="Common\Scripts\rwd-table\css\rwd-table.min.css" />
@@ -982,6 +1006,32 @@
     <Content Include="Framework\Coconut\Default.aspx" />
     <Content Include="Framework\Coconut\Logout.aspx" />
     <Content Include="Framework\Coconut\menu.xml" />
+    <Content Include="Images\Letters\a.png" />
+    <Content Include="Images\Letters\b.png" />
+    <Content Include="Images\Letters\c.png" />
+    <Content Include="Images\Letters\d.png" />
+    <Content Include="Images\Letters\e.png" />
+    <Content Include="Images\Letters\f.png" />
+    <Content Include="Images\Letters\g.png" />
+    <Content Include="Images\Letters\h.png" />
+    <Content Include="Images\Letters\i.png" />
+    <Content Include="Images\Letters\j.png" />
+    <Content Include="Images\Letters\k.png" />
+    <Content Include="Images\Letters\l.png" />
+    <Content Include="Images\Letters\m.png" />
+    <Content Include="Images\Letters\n.png" />
+    <Content Include="Images\Letters\o.png" />
+    <Content Include="Images\Letters\p.png" />
+    <Content Include="Images\Letters\q.png" />
+    <Content Include="Images\Letters\r.png" />
+    <Content Include="Images\Letters\s.png" />
+    <Content Include="Images\Letters\t.png" />
+    <Content Include="Images\Letters\u.png" />
+    <Content Include="Images\Letters\v.png" />
+    <Content Include="Images\Letters\w.png" />
+    <Content Include="Images\Letters\x.png" />
+    <Content Include="Images\Letters\y.png" />
+    <Content Include="Images\Letters\z.png" />
     <Content Include="Images\logo%402x.png" />
     <Content Include="Images\logo-collapsed%402x.png" />
     <Content Include="Images\logo-white-bg%402x.png" />
@@ -990,6 +1040,7 @@
     <Content Include="Images\user-3.png" />
     <Content Include="Images\user-4.png" />
     <Content Include="Images\user-5.png" />
+    <Content Include="Library\OrganizationChart.dll" />
     <Content Include="Office\ACC\1000.aspx" />
     <Content Include="Office\ACC\2000.aspx" />
     <Content Include="Office\ACC\수당정보.txt" />
