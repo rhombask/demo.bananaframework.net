@@ -1000,6 +1000,9 @@
     <Content Include="Office\SLS\1000.aspx" />
     <Content Include="Office\SLS\2000.aspx" />
     <Content Include="Office\SLS\매출정보.txt" />
+    <Content Include="_Test\HtmlPage1.html" />
+    <Content Include="_Test\OrganizationMap.aspx" />
+    <Content Include="_Test\테스트.txt" />
     <Content Include="__Default.aspx" />
     <Content Include="Framework\Banana\banana.css" />
     <Content Include="Framework\Banana\banana.js" />
@@ -1282,6 +1285,13 @@
     </Compile>
     <Compile Include="Office\SLS\2000.aspx.designer.cs">
       <DependentUpon>2000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Test\OrganizationMap.aspx.cs">
+      <DependentUpon>OrganizationMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Test\OrganizationMap.aspx.designer.cs">
+      <DependentUpon>OrganizationMap.aspx</DependentUpon>
     </Compile>
     <Compile Include="__Default.aspx.cs">
       <DependentUpon>__Default.aspx</DependentUpon>
