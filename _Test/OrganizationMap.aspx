@@ -197,6 +197,11 @@
 
 			// 검색 버튼
 			$("#search03").click(function () {
+				if ($("#search02").val() == "") {
+					alert("검색어를 입력하세요.");
+					return;
+				}
+
 				var found = false;
 				OrganizationChart.OrgDiagramClientControl.prototype.DataSet.forEach(function (entry) {
 					if (entry.title.indexOf($("#search02").val()) > -1) {
