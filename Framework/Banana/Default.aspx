@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="demo.bananaframework.net.Framework.Banana.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="demo.bananaframework.net.Framework.Banana.Default" EnableEventValidation="true" %>
 
-<%@ Register Assembly="BANANA.Web.Controls" Namespace="BANANA.Web.Controls" TagPrefix="bf" %>
+<%@ Register Assembly="BANANA.Web.Controls.v4.5" Namespace="BANANA.Web.Controls" TagPrefix="bf" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -53,7 +53,7 @@
 					<div id="settings"><button id="config" class="ui-icon ui-icon-gear"></button></div>
 					<div id="userInfo"><asp:Label ID="_lblWelcome" runat="server" /></div>
 					<div id="userMenu">
-						<div><asp:LinkButton ID="_btnLogout" runat="server" Text="로그아웃" OnClick="_btnLogout_Click" /></div>
+						<div><a href="Logout.aspx">로그아웃</a></div>
 						<div><a href="javascript:showMyInfo();">개인정보 수정</a></div>
 						<div><a href="javascript:showPassword();">비밀번호 변경</a></div>
 					</div>

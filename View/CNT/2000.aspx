@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="대리점정보관리" Language="C#" MasterPageFile="~/Control/Web.Master" AutoEventWireup="true" CodeBehind="2000.aspx.cs" Inherits="demo.bananaframework.net.View.CNT._2000" %>
 
-<%@ Register Assembly="BANANA.Web.Controls" Namespace="BANANA.Web.Controls" TagPrefix="bf" %>
+<%@ Register Assembly="BANANA.Web.Controls.v4.5" Namespace="BANANA.Web.Controls" TagPrefix="bf" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="_cphHead" runat="server">
 	<script type="text/javascript">
 		function openPage(code) {

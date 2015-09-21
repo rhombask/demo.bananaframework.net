@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="지사정보 등록/수정" Language="C#" MasterPageFile="~/Control/Popup.Master" AutoEventWireup="true" CodeBehind="1010.aspx.cs" Inherits="demo.bananaframework.net.View.CNT._1010" %>
 
-<%@ Register Assembly="BANANA.Web.Controls" Namespace="BANANA.Web.Controls" TagPrefix="bf" %>
+<%@ Register Assembly="BANANA.Web.Controls.v4.5" Namespace="BANANA.Web.Controls" TagPrefix="bf" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="_cphHead" runat="server">
 	<script type="text/javascript">
         // 체크박스 및 라디오 버튼 리스트 값 변경 이벤트

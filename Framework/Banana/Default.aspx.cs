@@ -36,9 +36,9 @@ namespace demo.bananaframework.net.Framework.Banana
 				}
 
 				// 상단메뉴 바인딩
-                // 2014-09-13 메뉴 화면 권한을 위한 수정 by ISHAN
+				// 2014-09-13 메뉴 화면 권한을 위한 수정 by ISHAN
 				DropDownMenu1.Callback		= "DropDown_Callback";
-                DropDownMenu1.DataSource    = base.GetDataTable("WSP_USER_PROGRAM_R1", base.GetCookie("UserGroupCode").Trim());
+				DropDownMenu1.DataSource    = base.GetDataTable("WSP_USER_PROGRAM_R1", base.GetCookie("UserGroupCode").Trim());
 				DropDownMenu1.DataBind();
 				
 				_lblWelcome.Text	= string.Format("[{0}] {1}({2})님, 환영합니다."
@@ -63,7 +63,7 @@ namespace demo.bananaframework.net.Framework.Banana
 				base.SetCookie("UserID", "");
 				base.SetCookie("UserName", "");
 				base.SetCookie("UserGroupName", "");
-                base.SetCookie("UserGroupCode", "");
+				base.SetCookie("UserGroupCode", "");
 
 				Response.Redirect("/Default.aspx", false);
 			}
