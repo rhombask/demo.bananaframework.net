@@ -42,21 +42,21 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Library\Ajax.dll</HintPath>
     </Reference>
-    <Reference Include="BANANA.Common, Version=4.2.422.14268, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="BANANA.Common.v4.5, Version=4.2.1034.15263, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Library\BANANA.Common.dll</HintPath>
+      <HintPath>Library\BANANA.Common.v4.5.dll</HintPath>
     </Reference>
-    <Reference Include="BANANA.International, Version=4.2.251.14268, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="BANANA.International.v4.5, Version=4.2.1034.15263, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Library\BANANA.International.dll</HintPath>
+      <HintPath>Library\BANANA.International.v4.5.dll</HintPath>
     </Reference>
-    <Reference Include="BANANA.Web, Version=4.2.352.14268, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="BANANA.Web.Controls.v4.5, Version=4.2.1034.15263, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Library\BANANA.Web.dll</HintPath>
+      <HintPath>Library\BANANA.Web.Controls.v4.5.dll</HintPath>
     </Reference>
-    <Reference Include="BANANA.Web.Controls, Version=4.2.257.14268, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="BANANA.Web.v4.5, Version=4.2.1034.15263, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Library\BANANA.Web.Controls.dll</HintPath>
+      <HintPath>Library\BANANA.Web.v4.5.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="OrganizationChart, Version=1.0.5401.36163, Culture=neutral, processorArchitecture=MSIL">
@@ -1041,6 +1041,10 @@
     <Content Include="Images\user-3.png" />
     <Content Include="Images\user-4.png" />
     <Content Include="Images\user-5.png" />
+    <Content Include="Library\BANANA.Common.v4.5.dll" />
+    <Content Include="Library\BANANA.International.v4.5.dll" />
+    <Content Include="Library\BANANA.Web.Controls.v4.5.dll" />
+    <Content Include="Library\BANANA.Web.v4.5.dll" />
     <Content Include="Library\OrganizationChart.dll" />
     <Content Include="Office\ACC\1000.aspx" />
     <Content Include="Office\ACC\2000.aspx" />
@@ -1103,10 +1107,6 @@
     <Content Include="Images\ui-icons_hot.gif" />
     <Content Include="Images\ui-icons_tip.gif" />
     <Content Include="Library\Ajax.dll" />
-    <Content Include="Library\BANANA.Common.dll" />
-    <Content Include="Library\BANANA.International.dll" />
-    <Content Include="Library\BANANA.Web.Controls.dll" />
-    <Content Include="Library\BANANA.Web.dll" />
     <Content Include="Library\ja-JP\BANANA.International.resources.dll" />
     <Content Include="Library\ko-KR\BANANA.International.resources.dll" />
     <Content Include="Library\zh-CN\BANANA.International.resources.dll" />
