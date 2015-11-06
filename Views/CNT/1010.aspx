@@ -3,18 +3,18 @@
 <%@ Register Assembly="BANANA.Web.Controls.v4.5" Namespace="BANANA.Web.Controls" TagPrefix="bf" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="_cphHead" runat="server">
 	<script type="text/javascript">
-        // 체크박스 및 라디오 버튼 리스트 값 변경 이벤트
-        $(document).ready(function () {
-            $("#<%=_chkNew.ClientID%>").change(function () {
-                if (this.checked) {
-                    $("#<%=_chSAUP_NO.ContainerID%>").hide();
-				    $("#<%=_txtSAUP_NO.ClientID%>").show();
+		// 체크박스 및 라디오 버튼 리스트 값 변경 이벤트
+		$(document).ready(function () {
+			$("#<%=_chkNew.ClientID%>").change(function () {
+				if (this.checked) {
+					$("#<%=_chSAUP_NO.ContainerID%>").hide();
+					$("#<%=_txtSAUP_NO.ClientID%>").show();
 				}
 				else {
-				    $("#<%=_chSAUP_NO.ContainerID%>").show();
-				    $("#<%=_txtSAUP_NO.ClientID%>").hide();
+					$("#<%=_chSAUP_NO.ContainerID%>").show();
+					$("#<%=_txtSAUP_NO.ClientID%>").hide();
 				}
-            });
+			});
 
 			// 로그인아이디 onblur시, ajax로 중복 체크 처리
 			$("#<%=_txtCNT_ID.ClientID%>").blur(function () {
@@ -48,20 +48,20 @@
 			});
 
 			$("#<%=_txtCNT_CD.ClientID%>").focus();
-        });
+		});
 
 		// 사업자등록번호 찾기 이벤트
 		function update_saupNo(e, json_object) {
-		    $("#<%=_txtCOMPANY_NM.ClientID%>").val(json_object.COMPANY_NM);
-		    $("#<%=_txtBUBIN_NO.ClientID%>").val(json_object.COMPANY_NM);
-		    $("#<%=_txtPRSDNT_NM2.ClientID%>").val(json_object.PRSDNT_NM);
-		    $("#<%=_txtUPTE.ClientID%>").val(json_object.UPTE);
-		    $("#<%=_txtUPJONG.ClientID%>").val(json_object.UPJONG);
-		    $("#<%=_txtTELNO.ClientID%>").val(json_object.TELNO);
-		    $("#<%=_txtFAXNO.ClientID%>").val(json_object.FAXNO);
-		    $("#<%=_txtEMAIL.ClientID%>").val(json_object.EMAIL);
-		    $("#<%=_ddlCOMPANY_TYPE_CD.ClientID%>").val(json_object.COMPANY_TYPE);
-		    $("#<%=_txtADDR.ClientID%>").val(json_object.ADDR);
+			$("#<%=_txtCOMPANY_NM.ClientID%>").val(json_object.COMPANY_NM);
+			$("#<%=_txtBUBIN_NO.ClientID%>").val(json_object.COMPANY_NM);
+			$("#<%=_txtPRSDNT_NM2.ClientID%>").val(json_object.PRSDNT_NM);
+			$("#<%=_txtUPTE.ClientID%>").val(json_object.UPTE);
+			$("#<%=_txtUPJONG.ClientID%>").val(json_object.UPJONG);
+			$("#<%=_txtTELNO.ClientID%>").val(json_object.TELNO);
+			$("#<%=_txtFAXNO.ClientID%>").val(json_object.FAXNO);
+			$("#<%=_txtEMAIL.ClientID%>").val(json_object.EMAIL);
+			$("#<%=_ddlCOMPANY_TYPE_CD.ClientID%>").val(json_object.COMPANY_TYPE);
+			$("#<%=_txtADDR.ClientID%>").val(json_object.ADDR);
 		}
 	</script>
 </asp:Content>

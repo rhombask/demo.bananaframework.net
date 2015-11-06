@@ -1058,6 +1058,7 @@
     <Content Include="Office\SLS\2000.aspx" />
     <Content Include="Office\SLS\매출정보.txt" />
     <Content Include="Views\BRD\1000.aspx" />
+    <Content Include="Views\BRD\1010.aspx" />
     <Content Include="_Test\HtmlPage1.html" />
     <Content Include="_Test\HtmlPage2.html" />
     <Content Include="_Test\OrganizationMap.aspx" />
@@ -1355,6 +1356,13 @@
     </Compile>
     <Compile Include="Views\BRD\1000.aspx.designer.cs">
       <DependentUpon>1000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BRD\1010.aspx.cs">
+      <DependentUpon>1010.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BRD\1010.aspx.designer.cs">
+      <DependentUpon>1010.aspx</DependentUpon>
     </Compile>
     <Compile Include="_Test\OrganizationMap.aspx.cs">
       <DependentUpon>OrganizationMap.aspx</DependentUpon>

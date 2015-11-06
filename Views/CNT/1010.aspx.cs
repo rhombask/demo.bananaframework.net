@@ -28,7 +28,7 @@ namespace demo.bananaframework.net.Views.CNT
 					/*
 					 * 아래 함수는 RadioButtonList, DropDownList 및 CheckBoxList 컨트롤의 공용 함수입니다.
 					 * 기본적으로 CHP_AJAX_CODEHELPER 프로시저를 호출합니다.
-					 * 활용 방법은 http://doc.bananaframework.net/View/BANANA-Web/SetListItem.aspx 를 참고 하세요.
+					 * 활용 방법은 http://doc.bananaframework.net/Views/BANANA-Web/SetListItem.aspx 를 참고 하세요.
 					 */
 					base.SetListItem(_ddlBK_CD, "Common", "A10", true);
 					base.SetListItem(_ddlCOMPANY_TYPE_CD, "Common", "A14", true);

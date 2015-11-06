@@ -94,7 +94,7 @@ namespace demo.bananaframework.net.Views.BAS
         /// <param name="e"></param>
         protected void _btnNew_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/View/BAS/2010.aspx", false);
+            Response.Redirect("/Views/BAS/2010.aspx", false);
         }
         #endregion
 

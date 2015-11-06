@@ -21,7 +21,7 @@
 		<bf:FixedGrid ID="FixedGrid1" runat="server" AllowPaging="True" Dock="Fill" FixedColumn="1" PageSize="50,100,300,500" OnPageIndexChanged="FixedGrid1_PageIndexChanged" OnPageSizeChanged="FixedGrid1_PageSizeChanged">
 		    <bf:TemplateField HeaderText="그룹코드" HorizontalAlignment="Center" Width="80px">
 				<ItemTemplate>
-					<asp:HyperLink ID="Label1" runat="server" Text='<%# Eval("TOTAL_CODE") %>' NavigateUrl='<%# string.Format("/View/BAS/3210.aspx?TOTAL_CODE={0}", Eval("TOTAL_CODE")) %>'></asp:HyperLink>
+					<asp:HyperLink ID="Label1" runat="server" Text='<%# Eval("TOTAL_CODE") %>' NavigateUrl='<%# string.Format("/Views/BAS/3210.aspx?TOTAL_CODE={0}", Eval("TOTAL_CODE")) %>'></asp:HyperLink>
 				</ItemTemplate>
 			</bf:TemplateField>
 			<bf:TemplateField HeaderText="코드명" Width="150px">

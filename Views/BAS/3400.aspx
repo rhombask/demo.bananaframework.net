@@ -26,7 +26,7 @@
 		<bf:FixedGrid ID="FixedGrid1" runat="server" Dock="Fill" ShowRowNumber="true" FixedColumn="1" AllowPaging="true" OnPageIndexChanged="FixedGrid1_PageIndexChanged" OnPageSizeChanged="FixedGrid1_PageSizeChanged" PageSize="50,100,300,500">
 			<bf:TemplateField ID="ID" HeaderText="프로그램ID" HorizontalAlignment="Center" Width="80px">
 				<ItemTemplate>
-					<bf:HyperLink ID="_hlID" runat="server" Text='<%# Eval("ID") %>' NavigateUrl='<%# string.Format("/View/BAS/3410.aspx?ID={0}", Eval("ID")) %>' />
+					<bf:HyperLink ID="_hlID" runat="server" Text='<%# Eval("ID") %>' NavigateUrl='<%# string.Format("/Views/BAS/3410.aspx?ID={0}", Eval("ID")) %>' />
 				</ItemTemplate>
 			</bf:TemplateField>
 			<bf:TemplateField ID="NAME" HeaderText="프로그램명" Width="350px">

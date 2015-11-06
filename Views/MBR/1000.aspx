@@ -5,7 +5,7 @@
 	<script type="text/javascript">
 		function openPage(code) {
 			// 경로 설정
-			var url		= "/View/MBR/1010.aspx?MBR_CD=" + code;
+			var url		= "/Views/MBR/1010.aspx?MBR_CD=" + code;
 
 			// 인디케이터 원상복귀
 			$("#<%=_btnNew.ContainerID%>").HideIndicator();

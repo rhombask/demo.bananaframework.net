@@ -5,7 +5,7 @@
 	<script type="text/javascript">
 		function openPage(code) {
 			// 경로 설정
-			var url		= "/View/CNT/1010.aspx?CNT_CD=" + code;
+			var url		= "/Views/CNT/1010.aspx?CNT_CD=" + code;
 
 			// 인디케이터 원상복귀
 			$("#<%=_btnNew.ContainerID%>").HideIndicator();
@@ -14,7 +14,7 @@
 			parent.openModalPopup(url, 1000, 550, function (args) {
 				//alert(args);
 			});
-        }
+		}
 	</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="_cphBody" runat="server">

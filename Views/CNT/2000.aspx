@@ -5,7 +5,7 @@
 	<script type="text/javascript">
 		function openPage(code) {
 			// 경로 설정
-			var url		= "/View/CNT/2010.aspx?CNT_CD=" + code;
+			var url		= "/Views/CNT/2010.aspx?CNT_CD=" + code;
 
 			// 인디케이터 원상복귀
 			$("#<%=_btnNew.ContainerID%>").HideIndicator();

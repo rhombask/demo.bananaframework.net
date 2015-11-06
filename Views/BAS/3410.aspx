@@ -30,7 +30,7 @@
 			<tr>
 				<td class="infoCol">자식 프로그램 경로</td>
 				<td class="inputCol" colspan="5"><bf:TextBox ID="_txtCHILD_ID" runat="server" Width="90%" TextMode="MultiLine" Rows="5" /><br /><br />
-					<span style="line-height:20px;">자식 프로그램ID는 기본적으로 부모 프로그램의 권한을 따라가도록 설계되어 있습니다.<br />부모 프로그램을 인식시키기 위해서는 "/View/BAS/3310.aspx;"와 같이 부모 프로그램 정보에 자식 프로그램ID들을 입력해 주어야 합니다.<br />
+					<span style="line-height:20px;">자식 프로그램ID는 기본적으로 부모 프로그램의 권한을 따라가도록 설계되어 있습니다.<br />부모 프로그램을 인식시키기 위해서는 "/Views/BAS/3310.aspx;"와 같이 부모 프로그램 정보에 자식 프로그램ID들을 입력해 주어야 합니다.<br />
 					이때, 자식 프로그램의 경로와 함께 세미콜론(;)을 마지막에 꼭 붙여줘야 합니다.
 					</span>
 				</td>

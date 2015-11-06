@@ -40,7 +40,7 @@
 			<bf:BoundDataField ID="NAME" DataTextField="NAME" HeaderText="이용자명" HorizontalAlignment="Center" />
 			<bf:TemplateField ID="USRID" HeaderText="이용자ID" HorizontalAlignment="Center">
 				<ItemTemplate>
-					<bf:HyperLink ID="_hlUSRID" runat="server" Text='<%# Eval("USRID") %>' NavigateUrl='<%# string.Format("/View/BAS/3110.aspx?USRID={0}", Eval("USRID")) %>' />
+					<bf:HyperLink ID="_hlUSRID" runat="server" Text='<%# Eval("USRID") %>' NavigateUrl='<%# string.Format("/Views/BAS/3110.aspx?USRID={0}", Eval("USRID")) %>' />
 				</ItemTemplate>
 			</bf:TemplateField>
 			<bf:BoundDataField ID="USER_GRP_NM" DataTextField="USER_GRP_NM" HeaderText="사용자그룹" HorizontalAlignment="Center" />

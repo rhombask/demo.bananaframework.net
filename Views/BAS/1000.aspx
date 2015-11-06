@@ -85,7 +85,7 @@
 					<bf:FixedGrid ID="FixedGrid1" runat="server" AllowPaging="True" FixedColumn="1" PageSize="50,100,300,500" OnPageIndexChanged="FixedGrid1_PageIndexChanged" OnPageSizeChanged="FixedGrid1_PageSizeChanged" OnItemCommand="FixedGrid1_ItemCommand">
 						<bf:TemplateField HeaderText="메인코드" HorizontalAlignment="Center" Width="70px">
 							<ItemTemplate>
-								<asp:HyperLink ID="Label1" runat="server" Text='<%# Eval("MAIN_CODE") %>' NavigateUrl='<%# string.Format("/View/BAS/1010.aspx?MAIN_CODE={0}", Eval("MAIN_CODE")) %>'></asp:HyperLink>
+								<asp:HyperLink ID="Label1" runat="server" Text='<%# Eval("MAIN_CODE") %>' NavigateUrl='<%# string.Format("/Views/BAS/1010.aspx?MAIN_CODE={0}", Eval("MAIN_CODE")) %>'></asp:HyperLink>
 							</ItemTemplate>
 						</bf:TemplateField>
 						<bf:TemplateField HeaderText="코드명" Width="200px">
@@ -102,7 +102,7 @@
 					<bf:FixedGrid ID="FixedGrid2" runat="server" AllowPaging="True" FixedColumn="1" PageSize="50,100,300,500" OnPageIndexChanged="FixedGrid1_PageIndexChanged" OnPageSizeChanged="FixedGrid1_PageSizeChanged">
 						<bf:TemplateField HeaderText="공통코드" HorizontalAlignment="Center" Width="80px">
 							<ItemTemplate>
-								<asp:HyperLink ID="Label1" runat="server" Text='<%# Eval("TOTAL_CODE") %>' NavigateUrl='<%# string.Format("/View/BAS/1020.aspx?TOTAL_CODE={0}", Eval("TOTAL_CODE")) %>'></asp:HyperLink>
+								<asp:HyperLink ID="Label1" runat="server" Text='<%# Eval("TOTAL_CODE") %>' NavigateUrl='<%# string.Format("/Views/BAS/1020.aspx?TOTAL_CODE={0}", Eval("TOTAL_CODE")) %>'></asp:HyperLink>
 							</ItemTemplate>
 						</bf:TemplateField>
 						<bf:TemplateField HeaderText="코드명" Width="150px">

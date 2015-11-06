@@ -21,7 +21,7 @@
 		<bf:FixedGrid ID="FixedGrid1" runat="server" AllowPaging="True" Dock="Fill" FixedColumn="1" PageSize="50,100,300,500" OnPageIndexChanged="FixedGrid1_PageIndexChanged" OnPageSizeChanged="FixedGrid1_PageSizeChanged">
 		    <bf:TemplateField ID="WKDAY" HeaderText="공휴일자" HorizontalAlignment="Center">
                 <ItemTemplate>
-                    <bf:HyperLink ID="_hlWKDAY" runat="server" Text='<%# Eval("WKDAY") %>' NavigateUrl='<%# string.Format("/View/BAS/2010.aspx?WKDAY={0}", Eval("WKDAY")) %>' />
+                    <bf:HyperLink ID="_hlWKDAY" runat="server" Text='<%# Eval("WKDAY") %>' NavigateUrl='<%# string.Format("/Views/BAS/2010.aspx?WKDAY={0}", Eval("WKDAY")) %>' />
                 </ItemTemplate>
             </bf:TemplateField>
             <bf:BoundDataField ID="WKMEMO" DataTextField="WKMEMO" HeaderText="메모" />

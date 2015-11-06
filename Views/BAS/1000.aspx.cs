@@ -87,7 +87,7 @@ namespace demo.bananaframework.net.Views.BAS
 		/// <param name="e"></param>
 		protected void _btnNew1_Click(object sender, EventArgs e)
 		{
-			Response.Redirect("/View/BAS/1010.aspx", false);
+			Response.Redirect("/Views/BAS/1010.aspx", false);
 		}
 		#endregion
 
@@ -99,7 +99,7 @@ namespace demo.bananaframework.net.Views.BAS
 		/// <param name="e"></param>
 		protected void _btnNew2_Click(object sender, EventArgs e)
 		{
-			Response.Redirect("/View/BAS/1020.aspx?MAIN_CODE=" + ViewState["MainCode"].ToString(), false);
+			Response.Redirect("/Views/BAS/1020.aspx?MAIN_CODE=" + ViewState["MainCode"].ToString(), false);
 		}
 		#endregion
 

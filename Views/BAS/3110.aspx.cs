@@ -153,7 +153,7 @@ namespace demo.bananaframework.net.Views.BAS
                     , ViewState["USRID"].ToString()           // 이용자ID
                     );
 
-                BANANA.Web.NotificationBar.Show("삭제하였습니다.", BANANA.Web.NotificationBar.NotificationType.Info, 2000, "location.href='/View/BAS/3100.aspx';");
+                BANANA.Web.NotificationBar.Show("삭제하였습니다.", BANANA.Web.NotificationBar.NotificationType.Info, 2000, "location.href='/Views/BAS/3100.aspx';");
             }
             catch (Exception err)
             {
@@ -170,7 +170,7 @@ namespace demo.bananaframework.net.Views.BAS
         /// <param name="e"></param>
         protected void _btnList_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/View/BAS/3100.aspx", false);
+            Response.Redirect("/Views/BAS/3100.aspx", false);
         }
         #endregion
     }

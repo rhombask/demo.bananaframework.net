@@ -115,7 +115,7 @@ namespace demo.bananaframework.net.Views.BAS
         /// <param name="e"></param>
         protected void _btnList_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/View/BAS/2000.aspx", false);
+            Response.Redirect("/Views/BAS/2000.aspx", false);
         }
         #endregion
 
@@ -133,7 +133,7 @@ namespace demo.bananaframework.net.Views.BAS
                     , _dptWKDAY.Date			    // 공휴일자
                     );
 
-                BANANA.Web.NotificationBar.Show("삭제하였습니다.", BANANA.Web.NotificationBar.NotificationType.Info, 2000, "location.href='/View/BAS/2000.aspx';");
+                BANANA.Web.NotificationBar.Show("삭제하였습니다.", BANANA.Web.NotificationBar.NotificationType.Info, 2000, "location.href='/Views/BAS/2000.aspx';");
             }
             catch (Exception err)
             {
