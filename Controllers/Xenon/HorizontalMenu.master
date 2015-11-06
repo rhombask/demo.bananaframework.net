@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Controllers/Xenon/Xenon.Master" AutoEventWireup="true" CodeBehind="HorizontalMenu.master.cs" Inherits="demo.bananaframework.net.Controllers.Xenon.HorizontalMenu" %>
+
+<%@ Register Src="~/Controllers/Xenon/TopMenu.ascx" TagPrefix="uc1" TagName="TopMenu" %>
+<%@ Register Src="~/Controllers/Xenon/ChatPanel.ascx" TagPrefix="uc1" TagName="ChatPanel" %>
+<%@ Register Src="~/Controllers/Xenon/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+<%@ Register Src="~/Controllers/Xenon/UserProfile.ascx" TagPrefix="uc1" TagName="UserProfile" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="_cphHead" runat="server">
+	<asp:ContentPlaceHolder ID="_cphHead" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="_cphContent" runat="server">
+	<form id="form1" runat="server">
+	<!-- 개인설정 : S -->
+	<div class="settings-pane">
+		<a href="#" data-toggle="settings-pane" data-animate="true">&times;</a>
+		<div class="settings-pane-inner">
+			<div class="row">
+				<div class="col-md-4">
+					<uc1:UserProfile runat="server" id="UserProfile" />
+				</div>
+				<div class="col-md-8 link-blocks-env">
+					<div class="links-block left-sep">
+						<h4>
+							<span>Notifications</span>
+						</h4>
+						<ul class="list-unstyled">
+							<li>
+								<input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk1" />
+								<label for="sp-chk1">Messages</label>
+							</li>
+							<li>
+								<input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk2" />
+								<label for="sp-chk2">Events</label>
+							</li>
+							<li>
+								<input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk3" />
+								<label for="sp-chk3">Updates</label>
+							</li>
+							<li>
+								<input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk4" />
+								<label for="sp-chk4">Server Uptime</label>
+							</li>
+						</ul>
+					</div>
+					<div class="links-block left-sep">
+						<h4>
+							<a href="#"><span>Help Desk</span></a>
+						</h4>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#"><i class="fa-angle-right"></i>Support Center</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa-angle-right"></i>Submit a Ticket</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa-angle-right"></i>Domains Protocol</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa-angle-right"></i>Terms of Service</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 개인설정 : E -->
+
+	<!-- 상단 메뉴 : S -->
+	<uc1:TopMenu runat="server" ID="TopMenu" />
+	<!-- 상단 메뉴 : E -->
+
+	<!-- 전체를 감싸는 DIV : S -->
+	<div class="page-container">
+		<div class="main-content">
+			<asp:ContentPlaceHolder ID="_cphContent" runat="server" />
+			<!-- Main Footer -->
+			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+			<!-- Or class "fixed" to  always fix the footer to the end of page -->
+			<uc1:Footer runat="server" id="Footer" />
+		</div>
+
+		<!-- Chat Section : S -->
+		<uc1:ChatPanel runat="server" id="ChatPanel" />
+		<!-- Chat Section : E -->
+	</div>
+	<!-- 전체를 감싸는 DIV : S -->
+	<div class="page-loading-overlay">
+		<div class="loader-2"></div>
+	</div>
+	</form>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="_cphModalArea" runat="server">
+	<asp:ContentPlaceHolder ID="_cphModalArea" runat="server" />
+</asp:Content>

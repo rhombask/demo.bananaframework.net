@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace demo.bananaframework.net.Framework.Coconut
 {
-	public partial class Logout : Control.BasePage
+	public partial class Logout : Controllers.BasePage
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

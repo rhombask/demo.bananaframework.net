@@ -11,7 +11,7 @@ namespace demo.bananaframework.net.Framework.Common
 	/// <summary>
 	/// 비밀번호 변경
 	/// </summary>
-	public partial class Change_password : Control.BasePage
+	public partial class Change_password : Controllers.BasePage
 	{
 		#region Page_Load : 페이지 로드
 		/// <summary>

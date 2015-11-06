@@ -11,7 +11,7 @@ namespace demo.bananaframework.net.Common
 	/// <summary>
 	/// 사업자등록증 코드헬퍼
 	/// </summary>
-	public partial class BusinessNo : Control.BasePage
+	public partial class BusinessNo : Controllers.BasePage
 	{
 		#region Page_Load : 페이지 로드
 		/// <summary>

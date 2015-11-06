@@ -997,12 +997,12 @@
     <Content Include="Common\Scripts\xenon-notes.js" />
     <Content Include="Common\Scripts\xenon-toggles.js" />
     <Content Include="Common\Scripts\xenon-widgets.js" />
-    <Content Include="Control\Xenon\ChatPanel.ascx" />
-    <Content Include="Control\Xenon\Footer.ascx" />
-    <Content Include="Control\Xenon\SideMenu.ascx" />
-    <Content Include="Control\Xenon\TopMenu.ascx" />
-    <Content Include="Control\Xenon\UserInfo.ascx" />
-    <Content Include="Control\Xenon\UserProfile.ascx" />
+    <Content Include="Controllers\Xenon\ChatPanel.ascx" />
+    <Content Include="Controllers\Xenon\Footer.ascx" />
+    <Content Include="Controllers\Xenon\SideMenu.ascx" />
+    <Content Include="Controllers\Xenon\TopMenu.ascx" />
+    <Content Include="Controllers\Xenon\UserInfo.ascx" />
+    <Content Include="Controllers\Xenon\UserProfile.ascx" />
     <Content Include="Default.aspx" />
     <Content Include="Framework\Banana\Logout.aspx" />
     <Content Include="Framework\Coconut\Default.aspx" />
@@ -1057,6 +1057,7 @@
     <Content Include="Office\SLS\1000.aspx" />
     <Content Include="Office\SLS\2000.aspx" />
     <Content Include="Office\SLS\매출정보.txt" />
+    <Content Include="Views\BRD\1000.aspx" />
     <Content Include="_Test\HtmlPage1.html" />
     <Content Include="_Test\HtmlPage2.html" />
     <Content Include="_Test\OrganizationMap.aspx" />
@@ -1111,41 +1112,41 @@
     <Content Include="Library\ja-JP\BANANA.International.resources.dll" />
     <Content Include="Library\ko-KR\BANANA.International.resources.dll" />
     <Content Include="Library\zh-CN\BANANA.International.resources.dll" />
-    <Content Include="View\ACC\1000.aspx" />
-    <Content Include="View\ACC\2000.aspx" />
-    <Content Include="View\ACC\3000.aspx" />
-    <Content Include="View\ACC\정산관리.txt" />
-    <Content Include="View\BAS\1000.aspx" />
-    <Content Include="View\BAS\1010.aspx" />
-    <Content Include="View\BAS\1020.aspx" />
-    <Content Include="View\BAS\2000.aspx" />
-    <Content Include="View\BAS\2010.aspx" />
-    <Content Include="View\BAS\3100.aspx" />
-    <Content Include="View\BAS\3110.aspx" />
-    <Content Include="View\BAS\3200.aspx" />
-    <Content Include="View\BAS\3210.aspx" />
-    <Content Include="View\BAS\3300.aspx" />
-    <Content Include="View\BAS\3400.aspx" />
-    <Content Include="View\BAS\3410.aspx" />
-    <Content Include="View\BAS\3500.aspx" />
-    <Content Include="View\BAS\기준정보관리.txt" />
-    <Content Include="View\CNT\1000.aspx" />
-    <Content Include="View\CNT\1010.aspx" />
-    <Content Include="View\CNT\2000.aspx" />
-    <Content Include="View\CNT\2010.aspx" />
-    <Content Include="View\CNT\지사_대리점관리.txt" />
-    <Content Include="View\Home.aspx" />
-    <Content Include="View\MBR\1000.aspx" />
-    <Content Include="View\MBR\1010.aspx" />
-    <Content Include="View\MBR\2000.aspx" />
-    <Content Include="View\MBR\3000.aspx" />
-    <Content Include="View\MBR\회원관리.txt" />
-    <Content Include="View\PRD\1000.aspx" />
-    <Content Include="View\PRD\2000.aspx" />
-    <Content Include="View\PRD\상품관리.txt" />
-    <Content Include="View\SLS\1000.aspx" />
-    <Content Include="View\SLS\2000.aspx" />
-    <Content Include="View\SLS\매출관리.txt" />
+    <Content Include="Views\ACC\1000.aspx" />
+    <Content Include="Views\ACC\2000.aspx" />
+    <Content Include="Views\ACC\3000.aspx" />
+    <Content Include="Views\ACC\정산관리.txt" />
+    <Content Include="Views\BAS\1000.aspx" />
+    <Content Include="Views\BAS\1010.aspx" />
+    <Content Include="Views\BAS\1020.aspx" />
+    <Content Include="Views\BAS\2000.aspx" />
+    <Content Include="Views\BAS\2010.aspx" />
+    <Content Include="Views\BAS\3100.aspx" />
+    <Content Include="Views\BAS\3110.aspx" />
+    <Content Include="Views\BAS\3200.aspx" />
+    <Content Include="Views\BAS\3210.aspx" />
+    <Content Include="Views\BAS\3300.aspx" />
+    <Content Include="Views\BAS\3400.aspx" />
+    <Content Include="Views\BAS\3410.aspx" />
+    <Content Include="Views\BAS\3500.aspx" />
+    <Content Include="Views\BAS\기준정보관리.txt" />
+    <Content Include="Views\CNT\1000.aspx" />
+    <Content Include="Views\CNT\1010.aspx" />
+    <Content Include="Views\CNT\2000.aspx" />
+    <Content Include="Views\CNT\2010.aspx" />
+    <Content Include="Views\CNT\지사_대리점관리.txt" />
+    <Content Include="Views\Home.aspx" />
+    <Content Include="Views\MBR\1000.aspx" />
+    <Content Include="Views\MBR\1010.aspx" />
+    <Content Include="Views\MBR\2000.aspx" />
+    <Content Include="Views\MBR\3000.aspx" />
+    <Content Include="Views\MBR\회원관리.txt" />
+    <Content Include="Views\PRD\1000.aspx" />
+    <Content Include="Views\PRD\2000.aspx" />
+    <Content Include="Views\PRD\상품관리.txt" />
+    <Content Include="Views\SLS\1000.aspx" />
+    <Content Include="Views\SLS\2000.aspx" />
+    <Content Include="Views\SLS\매출관리.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1172,103 +1173,103 @@
     <Compile Include="Common\BusinessNo.aspx.designer.cs">
       <DependentUpon>BusinessNo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Control\BasePage.cs">
+    <Compile Include="Controllers\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\CheckDuplicatedLoginID.ashx.cs">
+    <Compile Include="Controllers\CheckDuplicatedLoginID.ashx.cs">
       <DependentUpon>CheckDuplicatedLoginID.ashx</DependentUpon>
     </Compile>
-    <Compile Include="Control\Extensions.cs" />
-    <Compile Include="Control\LinqExtensions.cs" />
-    <Compile Include="Control\Login.ashx.cs">
+    <Compile Include="Controllers\Extensions.cs" />
+    <Compile Include="Controllers\LinqExtensions.cs" />
+    <Compile Include="Controllers\Login.ashx.cs">
       <DependentUpon>Login.ashx</DependentUpon>
     </Compile>
-    <Compile Include="Control\MasterPage.cs">
+    <Compile Include="Controllers\MasterPage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\Popup.Master.cs">
+    <Compile Include="Controllers\Popup.Master.cs">
       <DependentUpon>Popup.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\Popup.Master.designer.cs">
+    <Compile Include="Controllers\Popup.Master.designer.cs">
       <DependentUpon>Popup.Master</DependentUpon>
     </Compile>
-    <Compile Include="Control\Web.Master.cs">
+    <Compile Include="Controllers\Web.Master.cs">
       <DependentUpon>Web.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\Web.Master.designer.cs">
+    <Compile Include="Controllers\Web.Master.designer.cs">
       <DependentUpon>Web.Master</DependentUpon>
     </Compile>
-    <Compile Include="Control\Xenon\ChatPanel.ascx.cs">
+    <Compile Include="Controllers\Xenon\ChatPanel.ascx.cs">
       <DependentUpon>ChatPanel.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\Xenon\ChatPanel.ascx.designer.cs">
+    <Compile Include="Controllers\Xenon\ChatPanel.ascx.designer.cs">
       <DependentUpon>ChatPanel.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Control\Xenon\Footer.ascx.cs">
+    <Compile Include="Controllers\Xenon\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\Xenon\Footer.ascx.designer.cs">
+    <Compile Include="Controllers\Xenon\Footer.ascx.designer.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Control\Xenon\HorizontalMenu.master.cs">
+    <Compile Include="Controllers\Xenon\HorizontalMenu.master.cs">
       <DependentUpon>HorizontalMenu.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\Xenon\HorizontalMenu.master.designer.cs">
+    <Compile Include="Controllers\Xenon\HorizontalMenu.master.designer.cs">
       <DependentUpon>HorizontalMenu.master</DependentUpon>
     </Compile>
-    <Compile Include="Control\Xenon\Menu.cs" />
-    <Compile Include="Control\Xenon\SideMenu.ascx.cs">
+    <Compile Include="Controllers\Xenon\Menu.cs" />
+    <Compile Include="Controllers\Xenon\SideMenu.ascx.cs">
       <DependentUpon>SideMenu.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\Xenon\SideMenu.ascx.designer.cs">
+    <Compile Include="Controllers\Xenon\SideMenu.ascx.designer.cs">
       <DependentUpon>SideMenu.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Control\Xenon\TopMenu.ascx.cs">
+    <Compile Include="Controllers\Xenon\TopMenu.ascx.cs">
       <DependentUpon>TopMenu.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\Xenon\TopMenu.ascx.designer.cs">
+    <Compile Include="Controllers\Xenon\TopMenu.ascx.designer.cs">
       <DependentUpon>TopMenu.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Control\Xenon\UserInfo.ascx.cs">
+    <Compile Include="Controllers\Xenon\UserInfo.ascx.cs">
       <DependentUpon>UserInfo.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\Xenon\UserInfo.ascx.designer.cs">
+    <Compile Include="Controllers\Xenon\UserInfo.ascx.designer.cs">
       <DependentUpon>UserInfo.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Control\Xenon\UserProfile.ascx.cs">
+    <Compile Include="Controllers\Xenon\UserProfile.ascx.cs">
       <DependentUpon>UserProfile.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\Xenon\UserProfile.ascx.designer.cs">
+    <Compile Include="Controllers\Xenon\UserProfile.ascx.designer.cs">
       <DependentUpon>UserProfile.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Control\Xenon\VerticalHorizontalMenu.master.cs">
+    <Compile Include="Controllers\Xenon\VerticalHorizontalMenu.master.cs">
       <DependentUpon>VerticalHorizontalMenu.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\Xenon\VerticalHorizontalMenu.master.designer.cs">
+    <Compile Include="Controllers\Xenon\VerticalHorizontalMenu.master.designer.cs">
       <DependentUpon>VerticalHorizontalMenu.master</DependentUpon>
     </Compile>
-    <Compile Include="Control\Xenon\VerticalMenu.master.cs">
+    <Compile Include="Controllers\Xenon\VerticalMenu.master.cs">
       <DependentUpon>VerticalMenu.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\Xenon\VerticalMenu.master.designer.cs">
+    <Compile Include="Controllers\Xenon\VerticalMenu.master.designer.cs">
       <DependentUpon>VerticalMenu.master</DependentUpon>
     </Compile>
-    <Compile Include="Control\Xenon\Xenon.Master.cs">
+    <Compile Include="Controllers\Xenon\Xenon.Master.cs">
       <DependentUpon>Xenon.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Control\Xenon\Xenon.Master.designer.cs">
+    <Compile Include="Controllers\Xenon\Xenon.Master.designer.cs">
       <DependentUpon>Xenon.Master</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
@@ -1348,6 +1349,13 @@
     <Compile Include="Office\SLS\2000.aspx.designer.cs">
       <DependentUpon>2000.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\BRD\1000.aspx.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BRD\1000.aspx.designer.cs">
+      <DependentUpon>1000.aspx</DependentUpon>
+    </Compile>
     <Compile Include="_Test\OrganizationMap.aspx.cs">
       <DependentUpon>OrganizationMap.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1391,215 +1399,215 @@
       <DependentUpon>Find-my-id-and-password.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\ACC\1000.aspx.cs">
+    <Compile Include="Views\ACC\1000.aspx.cs">
       <DependentUpon>1000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\ACC\1000.aspx.designer.cs">
+    <Compile Include="Views\ACC\1000.aspx.designer.cs">
       <DependentUpon>1000.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\ACC\2000.aspx.cs">
+    <Compile Include="Views\ACC\2000.aspx.cs">
       <DependentUpon>2000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\ACC\2000.aspx.designer.cs">
+    <Compile Include="Views\ACC\2000.aspx.designer.cs">
       <DependentUpon>2000.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\ACC\3000.aspx.cs">
+    <Compile Include="Views\ACC\3000.aspx.cs">
       <DependentUpon>3000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\ACC\3000.aspx.designer.cs">
+    <Compile Include="Views\ACC\3000.aspx.designer.cs">
       <DependentUpon>3000.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\BAS\1000.aspx.cs">
+    <Compile Include="Views\BAS\1000.aspx.cs">
       <DependentUpon>1000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\BAS\1000.aspx.designer.cs">
+    <Compile Include="Views\BAS\1000.aspx.designer.cs">
       <DependentUpon>1000.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\BAS\1010.aspx.cs">
+    <Compile Include="Views\BAS\1010.aspx.cs">
       <DependentUpon>1010.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\BAS\1010.aspx.designer.cs">
+    <Compile Include="Views\BAS\1010.aspx.designer.cs">
       <DependentUpon>1010.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\BAS\1020.aspx.cs">
+    <Compile Include="Views\BAS\1020.aspx.cs">
       <DependentUpon>1020.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\BAS\1020.aspx.designer.cs">
+    <Compile Include="Views\BAS\1020.aspx.designer.cs">
       <DependentUpon>1020.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\BAS\2000.aspx.cs">
+    <Compile Include="Views\BAS\2000.aspx.cs">
       <DependentUpon>2000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\BAS\2000.aspx.designer.cs">
+    <Compile Include="Views\BAS\2000.aspx.designer.cs">
       <DependentUpon>2000.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\BAS\2010.aspx.cs">
+    <Compile Include="Views\BAS\2010.aspx.cs">
       <DependentUpon>2010.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\BAS\2010.aspx.designer.cs">
+    <Compile Include="Views\BAS\2010.aspx.designer.cs">
       <DependentUpon>2010.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\BAS\3100.aspx.cs">
+    <Compile Include="Views\BAS\3100.aspx.cs">
       <DependentUpon>3100.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\BAS\3100.aspx.designer.cs">
+    <Compile Include="Views\BAS\3100.aspx.designer.cs">
       <DependentUpon>3100.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\BAS\3110.aspx.cs">
+    <Compile Include="Views\BAS\3110.aspx.cs">
       <DependentUpon>3110.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\BAS\3110.aspx.designer.cs">
+    <Compile Include="Views\BAS\3110.aspx.designer.cs">
       <DependentUpon>3110.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\BAS\3200.aspx.cs">
+    <Compile Include="Views\BAS\3200.aspx.cs">
       <DependentUpon>3200.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\BAS\3200.aspx.designer.cs">
+    <Compile Include="Views\BAS\3200.aspx.designer.cs">
       <DependentUpon>3200.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\BAS\3210.aspx.cs">
+    <Compile Include="Views\BAS\3210.aspx.cs">
       <DependentUpon>3210.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\BAS\3210.aspx.designer.cs">
+    <Compile Include="Views\BAS\3210.aspx.designer.cs">
       <DependentUpon>3210.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\BAS\3300.aspx.cs">
+    <Compile Include="Views\BAS\3300.aspx.cs">
       <DependentUpon>3300.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\BAS\3300.aspx.designer.cs">
+    <Compile Include="Views\BAS\3300.aspx.designer.cs">
       <DependentUpon>3300.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\BAS\3400.aspx.cs">
+    <Compile Include="Views\BAS\3400.aspx.cs">
       <DependentUpon>3400.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\BAS\3400.aspx.designer.cs">
+    <Compile Include="Views\BAS\3400.aspx.designer.cs">
       <DependentUpon>3400.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\BAS\3410.aspx.cs">
+    <Compile Include="Views\BAS\3410.aspx.cs">
       <DependentUpon>3410.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\BAS\3410.aspx.designer.cs">
+    <Compile Include="Views\BAS\3410.aspx.designer.cs">
       <DependentUpon>3410.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\BAS\3500.aspx.cs">
+    <Compile Include="Views\BAS\3500.aspx.cs">
       <DependentUpon>3500.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\BAS\3500.aspx.designer.cs">
+    <Compile Include="Views\BAS\3500.aspx.designer.cs">
       <DependentUpon>3500.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\CNT\1000.aspx.cs">
+    <Compile Include="Views\CNT\1000.aspx.cs">
       <DependentUpon>1000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\CNT\1000.aspx.designer.cs">
+    <Compile Include="Views\CNT\1000.aspx.designer.cs">
       <DependentUpon>1000.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\CNT\1010.aspx.cs">
+    <Compile Include="Views\CNT\1010.aspx.cs">
       <DependentUpon>1010.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\CNT\1010.aspx.designer.cs">
+    <Compile Include="Views\CNT\1010.aspx.designer.cs">
       <DependentUpon>1010.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\CNT\2000.aspx.cs">
+    <Compile Include="Views\CNT\2000.aspx.cs">
       <DependentUpon>2000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\CNT\2000.aspx.designer.cs">
+    <Compile Include="Views\CNT\2000.aspx.designer.cs">
       <DependentUpon>2000.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\CNT\2010.aspx.cs">
+    <Compile Include="Views\CNT\2010.aspx.cs">
       <DependentUpon>2010.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\CNT\2010.aspx.designer.cs">
+    <Compile Include="Views\CNT\2010.aspx.designer.cs">
       <DependentUpon>2010.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\Home.aspx.cs">
+    <Compile Include="Views\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\Home.aspx.designer.cs">
+    <Compile Include="Views\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\MBR\1000.aspx.cs">
+    <Compile Include="Views\MBR\1000.aspx.cs">
       <DependentUpon>1000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\MBR\1000.aspx.designer.cs">
+    <Compile Include="Views\MBR\1000.aspx.designer.cs">
       <DependentUpon>1000.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\MBR\1010.aspx.cs">
+    <Compile Include="Views\MBR\1010.aspx.cs">
       <DependentUpon>1010.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\MBR\1010.aspx.designer.cs">
+    <Compile Include="Views\MBR\1010.aspx.designer.cs">
       <DependentUpon>1010.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\MBR\2000.aspx.cs">
+    <Compile Include="Views\MBR\2000.aspx.cs">
       <DependentUpon>2000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\MBR\2000.aspx.designer.cs">
+    <Compile Include="Views\MBR\2000.aspx.designer.cs">
       <DependentUpon>2000.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\MBR\3000.aspx.cs">
+    <Compile Include="Views\MBR\3000.aspx.cs">
       <DependentUpon>3000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\MBR\3000.aspx.designer.cs">
+    <Compile Include="Views\MBR\3000.aspx.designer.cs">
       <DependentUpon>3000.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\PRD\1000.aspx.cs">
+    <Compile Include="Views\PRD\1000.aspx.cs">
       <DependentUpon>1000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\PRD\1000.aspx.designer.cs">
+    <Compile Include="Views\PRD\1000.aspx.designer.cs">
       <DependentUpon>1000.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\PRD\2000.aspx.cs">
+    <Compile Include="Views\PRD\2000.aspx.cs">
       <DependentUpon>2000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\PRD\2000.aspx.designer.cs">
+    <Compile Include="Views\PRD\2000.aspx.designer.cs">
       <DependentUpon>2000.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\SLS\1000.aspx.cs">
+    <Compile Include="Views\SLS\1000.aspx.cs">
       <DependentUpon>1000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\SLS\1000.aspx.designer.cs">
+    <Compile Include="Views\SLS\1000.aspx.designer.cs">
       <DependentUpon>1000.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\SLS\2000.aspx.cs">
+    <Compile Include="Views\SLS\2000.aspx.cs">
       <DependentUpon>2000.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\SLS\2000.aspx.designer.cs">
+    <Compile Include="Views\SLS\2000.aspx.designer.cs">
       <DependentUpon>2000.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.md" />
-    <Content Include="Control\Web.Master" />
-    <Content Include="Control\Popup.Master" />
-    <Content Include="Control\CheckDuplicatedLoginID.ashx" />
+    <Content Include="Controllers\Web.Master" />
+    <Content Include="Controllers\Popup.Master" />
+    <Content Include="Controllers\CheckDuplicatedLoginID.ashx" />
     <Content Include="Common\Fonts\elusive\font\elusive.eot" />
     <Content Include="Common\Fonts\elusive\font\elusive.ttf" />
     <Content Include="Common\Fonts\elusive\font\elusive.woff" />
@@ -1722,11 +1730,11 @@
     <Content Include="Common\Scripts\uikit\less\uikit.less" />
     <Content Include="Common\Scripts\uikit\less\utility.less" />
     <Content Include="Common\Scripts\uikit\less\variables.less" />
-    <Content Include="Control\Xenon\HorizontalMenu.master" />
-    <Content Include="Control\Xenon\VerticalHorizontalMenu.master" />
-    <Content Include="Control\Xenon\VerticalMenu.master" />
-    <Content Include="Control\Xenon\Xenon.Master" />
-    <Content Include="Control\Login.ashx" />
+    <Content Include="Controllers\Xenon\HorizontalMenu.master" />
+    <Content Include="Controllers\Xenon\VerticalHorizontalMenu.master" />
+    <Content Include="Controllers\Xenon\VerticalMenu.master" />
+    <Content Include="Controllers\Xenon\Xenon.Master" />
+    <Content Include="Controllers\Login.ashx" />
     <None Include="Properties\PublishProfiles\deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

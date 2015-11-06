@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace demo.bananaframework.net
 {
-	public partial class Default : Control.BasePage
+	public partial class Default : Controllers.BasePage
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

@@ -42,7 +42,7 @@ $(document).ready(function () {
 	$("#userMenu").css("left", $(window).width() - $("#userMenu").width() - 40);
 
 	// 홈 탭 추가
-	createTab("HOME", "HOME", "/View/Home.aspx", "HOME");
+	createTab("HOME", "HOME", "/Views/Home.aspx", "HOME");
 
 	// 모든 탭 닫기 버튼 이벤트
 	$("#tabClose").click(function () {
@@ -234,6 +234,6 @@ function createTab(id, name, url, note) {
 
 // 자식창 닫으면서 부모창 새로고침
 function fn_Reflash() {
-    opener.parent.location.href = opener.parent.document.URL; // 부모창 새로고침
-    this.close();        // 팝업창 닫기
+	opener.parent.location.href = opener.parent.document.URL; // 부모창 새로고침
+	this.close();        // 팝업창 닫기
 }

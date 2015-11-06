@@ -11,21 +11,21 @@ namespace demo.bananaframework.net
 	/// <summary>
 	/// 로그인 페이지입니다.
 	/// </summary>
-	public partial class __Default : Control.BasePage
+	public partial class __Default : Controllers.BasePage
 	{
-        #region Page_Load : 페이지 로드
-        /// <summary>
-        /// 페이지 로드
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+		#region Page_Load : 페이지 로드
+		/// <summary>
+		/// 페이지 로드
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			if (!IsPostBack)
 			{
 			}
-        }
-        #endregion
+		}
+		#endregion
 
 		#region _btnLOGIN_Click : 로그인버튼 클릭
 		/// <summary>
@@ -59,9 +59,9 @@ namespace demo.bananaframework.net
 				base.SetCookie("UserID", "");
 				base.SetCookie("UserName", "");
 				base.SetCookie("UserGroupName", "");
-                base.SetCookie("UserGroupCode", "");
+				base.SetCookie("UserGroupCode", "");
 
-                BANANA.Web.NotificationBar.Show(err.Message, BANANA.Web.NotificationBar.NotificationType.Error);
+				BANANA.Web.NotificationBar.Show(err.Message, BANANA.Web.NotificationBar.NotificationType.Error);
 			}
 		}
 		#endregion

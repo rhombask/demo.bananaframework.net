@@ -11,7 +11,7 @@ namespace demo.bananaframework.net.Framework.Coconut
 	/// 코코넛 템플릿의 첫 페이지
 	/// 코코넛 템플릿은 본사/지사/대리점은 로그인 할 수 없습니다.
 	/// </summary>
-	public partial class Default : Control.BasePage
+	public partial class Default : Controllers.BasePage
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

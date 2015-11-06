@@ -10,7 +10,7 @@ using OrganizationChart;
 
 namespace demo.bananaframework.net._Test
 {
-	public partial class OrganizationMap : Control.BasePage
+	public partial class OrganizationMap : Controllers.BasePage
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

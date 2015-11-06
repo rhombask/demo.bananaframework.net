@@ -11,7 +11,7 @@ namespace demo.bananaframework.net.Framework.Common
 	/// <summary>
 	/// 로그인을 위한 아이디와 비밀번호 찾기 페이지입니다.
 	/// </summary>
-	public partial class Find_my_id_and_password : Control.BasePage
+	public partial class Find_my_id_and_password : Controllers.BasePage
 	{
 		#region Page_Load : 페이지 로드
 		/// <summary>

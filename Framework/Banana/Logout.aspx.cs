@@ -10,7 +10,7 @@ namespace demo.bananaframework.net.Framework.Banana
 	/// <summary>
 	/// 제  목: 로그아웃
 	/// </summary>
-	public partial class Logout : Control.BasePage
+	public partial class Logout : Controllers.BasePage
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

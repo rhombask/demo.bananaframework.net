@@ -1,4 +1,4 @@
-﻿<%@ Page Title="아이디/비밀번호 찾기" Language="C#" MasterPageFile="~/Control/Popup.Master" AutoEventWireup="true" CodeBehind="Find-my-id-and-password.aspx.cs" Inherits="demo.bananaframework.net.Framework.Common.Find_my_id_and_password" %>
+﻿<%@ Page Title="아이디/비밀번호 찾기" Language="C#" MasterPageFile="~/Controllers/Popup.Master" AutoEventWireup="true" CodeBehind="Find-my-id-and-password.aspx.cs" Inherits="demo.bananaframework.net.Framework.Common.Find_my_id_and_password" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="_cphHead" runat="server">
 	<style type="text/css">

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Control/Xenon/VerticalMenu.master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="demo.bananaframework.net.Framework.Coconut.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Controllers/Xenon/VerticalMenu.master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="demo.bananaframework.net.Framework.Coconut.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="_cphHead" runat="server">
 	<script type="text/javascript" src="/Common/Scripts/xenon-widgets.js"></script>
 	<script type="text/javascript" src="/Common/Scripts/devexpress-web-14.1/js/globalize.min.js"></script>

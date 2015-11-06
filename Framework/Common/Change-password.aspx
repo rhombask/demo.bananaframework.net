@@ -1,4 +1,4 @@
-﻿<%@ Page Title="비밀번호 변경" Language="C#" MasterPageFile="~/Control/Popup.Master" AutoEventWireup="true" CodeBehind="Change-password.aspx.cs" Inherits="demo.bananaframework.net.Framework.Common.Change_password" %>
+﻿<%@ Page Title="비밀번호 변경" Language="C#" MasterPageFile="~/Controllers/Popup.Master" AutoEventWireup="true" CodeBehind="Change-password.aspx.cs" Inherits="demo.bananaframework.net.Framework.Common.Change_password" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="_cphHead" runat="server">
 </asp:Content>

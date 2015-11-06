@@ -1,4 +1,4 @@
-﻿<%@ Page Title="통합수당조회" Language="C#" MasterPageFile="~/Control/Xenon/VerticalMenu.master" AutoEventWireup="true" CodeBehind="2000.aspx.cs" Inherits="demo.bananaframework.net.Office.ACC._2000" %>
+﻿<%@ Page Title="통합수당조회" Language="C#" MasterPageFile="~/Controllers/Xenon/VerticalMenu.master" AutoEventWireup="true" CodeBehind="2000.aspx.cs" Inherits="demo.bananaframework.net.Office.ACC._2000" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="_cphHead" runat="server">
 </asp:Content>

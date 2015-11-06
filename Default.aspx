@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Control/Xenon/Xenon.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="demo.bananaframework.net.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Controllers/Xenon/Xenon.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="demo.bananaframework.net.Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="_cphHead" runat="server">
 	<script src="/Framework/Common/Common.js" type="text/javascript"></script>
@@ -50,7 +50,7 @@
 						"hideMethod": "fadeOut"
 					};
 					$.ajax({
-						url: "/Control/Login.ashx",
+						url: "/Controllers/Login.ashx",
 						method: 'POST',
 						dataType: 'json',
 						data: {

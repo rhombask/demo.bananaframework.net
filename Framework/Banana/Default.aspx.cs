@@ -12,7 +12,7 @@ namespace demo.bananaframework.net.Framework.Banana
 	/// 바나나 템플릿의 첫 페이지
 	/// 바나나 템플릿은 일반회원은 로그인할 수 없습니다.
 	/// </summary>
-	public partial class Default : Control.BasePage
+	public partial class Default : Controllers.BasePage
 	{
 		#region Page_Load : 페이지 로드
 		/// <summary>
