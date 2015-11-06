@@ -34,7 +34,7 @@
 	<fieldset id="result">
 		<legend>검색결과</legend>
 		<bf:FixedGrid ID="FixedGrid1" runat="server" Dock="Fill" FixedColumn="3" ShowRowNumber="true" AllowPaging="true" OnPageIndexChanged="FixedGrid1_PageIndexChanged" OnPageSizeChanged="FixedGrid1_PageSizeChanged" PageSize="50,100,300,500" ShowExcel="True">
-			<bf:TemplateField HeaderText="제목" HorizontalAlignment="Center" Width="80px">
+			<bf:TemplateField HeaderText="제목" Width="400px">
 				<ItemTemplate>
 					<bf:HyperLink runat="server" Text='<%# Eval("SUBJECT") %>' NavigateUrl='<%# string.Format("javascript:openPage(&#39;{0}&#39;);", Eval("IDX")) %>' />
 				</ItemTemplate>
