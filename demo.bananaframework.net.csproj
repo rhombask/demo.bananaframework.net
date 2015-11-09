@@ -1059,6 +1059,7 @@
     <Content Include="Office\SLS\매출정보.txt" />
     <Content Include="Views\BRD\1000.aspx" />
     <Content Include="Views\BRD\1010.aspx" />
+    <Content Include="_Test\FileUpload.aspx" />
     <Content Include="_Test\HtmlPage1.html" />
     <Content Include="_Test\HtmlPage2.html" />
     <Content Include="_Test\OrganizationMap.aspx" />
@@ -1363,6 +1364,16 @@
     </Compile>
     <Compile Include="Views\BRD\1010.aspx.designer.cs">
       <DependentUpon>1010.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Test\FileUpload.ashx.cs">
+      <DependentUpon>FileUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="_Test\FileUpload.aspx.cs">
+      <DependentUpon>FileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Test\FileUpload.aspx.designer.cs">
+      <DependentUpon>FileUpload.aspx</DependentUpon>
     </Compile>
     <Compile Include="_Test\OrganizationMap.aspx.cs">
       <DependentUpon>OrganizationMap.aspx</DependentUpon>
@@ -1750,6 +1761,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="_Test\FileUpload.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Framework\Kiwi\" />
