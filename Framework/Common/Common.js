@@ -51,7 +51,10 @@ function openModalPopup(url, w, h, callback) {
 			// 로딩중 없애기
 			$loading.remove();
 			$(this).attr("src", "about:blank");
-			callback($(this).data("args"));
+
+			if ($(this).data("args") != undefined) {
+				callback($(this).data("args"));
+			}
 		},
 		resizeStart: function() {
 			$("#_popupFrame").hide();
