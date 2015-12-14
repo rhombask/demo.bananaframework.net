@@ -1004,6 +1004,7 @@
     <Content Include="Controllers\Xenon\UserInfo.ascx" />
     <Content Include="Controllers\Xenon\UserProfile.ascx" />
     <Content Include="Default.aspx" />
+    <Content Include="FileUpload\Default.aspx" />
     <Content Include="Framework\Banana\Logout.aspx" />
     <Content Include="Framework\Coconut\Default.aspx" />
     <Content Include="Framework\Coconut\Logout.aspx" />
@@ -1046,7 +1047,10 @@
     <Content Include="Library\BANANA.International.v4.5.dll" />
     <Content Include="Library\BANANA.Web.Controls.v4.5.dll" />
     <Content Include="Library\BANANA.Web.v4.5.dll" />
+    <Content Include="Library\ja-JP\BANANA.International.v4.5.resources.dll" />
+    <Content Include="Library\ko-KR\BANANA.International.v4.5.resources.dll" />
     <Content Include="Library\OrganizationChart.dll" />
+    <Content Include="Library\zh-CN\BANANA.International.v4.5.resources.dll" />
     <Content Include="Office\ACC\1000.aspx" />
     <Content Include="Office\ACC\2000.aspx" />
     <Content Include="Office\ACC\수당정보.txt" />
@@ -1059,6 +1063,13 @@
     <Content Include="Office\SLS\매출정보.txt" />
     <Content Include="Views\BRD\1000.aspx" />
     <Content Include="Views\BRD\1010.aspx" />
+    <Content Include="_Test\chart_01.aspx" />
+    <Content Include="_Test\chart_02.aspx" />
+    <Content Include="_Test\chart_03.aspx" />
+    <Content Include="_Test\chart_04.aspx" />
+    <Content Include="_Test\chart_05.aspx" />
+    <Content Include="_Test\chart_06.aspx" />
+    <Content Include="_Test\chart_07.aspx" />
     <Content Include="_Test\FileUpload.aspx" />
     <Content Include="_Test\HtmlPage1.html" />
     <Content Include="_Test\HtmlPage2.html" />
@@ -1111,9 +1122,6 @@
     <Content Include="Images\ui-icons_hot.gif" />
     <Content Include="Images\ui-icons_tip.gif" />
     <Content Include="Library\Ajax.dll" />
-    <Content Include="Library\ja-JP\BANANA.International.resources.dll" />
-    <Content Include="Library\ko-KR\BANANA.International.resources.dll" />
-    <Content Include="Library\zh-CN\BANANA.International.resources.dll" />
     <Content Include="Views\ACC\1000.aspx" />
     <Content Include="Views\ACC\2000.aspx" />
     <Content Include="Views\ACC\3000.aspx" />
@@ -1281,6 +1289,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FileUpload\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileUpload\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Framework\Banana\Logout.aspx.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1364,6 +1379,55 @@
     </Compile>
     <Compile Include="Views\BRD\1010.aspx.designer.cs">
       <DependentUpon>1010.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Test\chart_01.aspx.cs">
+      <DependentUpon>chart_01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Test\chart_01.aspx.designer.cs">
+      <DependentUpon>chart_01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Test\chart_02.aspx.cs">
+      <DependentUpon>chart_02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Test\chart_02.aspx.designer.cs">
+      <DependentUpon>chart_02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Test\chart_03.aspx.cs">
+      <DependentUpon>chart_03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Test\chart_03.aspx.designer.cs">
+      <DependentUpon>chart_03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Test\chart_04.aspx.cs">
+      <DependentUpon>chart_04.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Test\chart_04.aspx.designer.cs">
+      <DependentUpon>chart_04.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Test\chart_05.aspx.cs">
+      <DependentUpon>chart_05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Test\chart_05.aspx.designer.cs">
+      <DependentUpon>chart_05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Test\chart_06.aspx.cs">
+      <DependentUpon>chart_06.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Test\chart_06.aspx.designer.cs">
+      <DependentUpon>chart_06.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Test\chart_07.aspx.cs">
+      <DependentUpon>chart_07.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Test\chart_07.aspx.designer.cs">
+      <DependentUpon>chart_07.aspx</DependentUpon>
     </Compile>
     <Compile Include="_Test\FileUpload.ashx.cs">
       <DependentUpon>FileUpload.ashx</DependentUpon>
