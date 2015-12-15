@@ -38,9 +38,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ajax, Version=5.7.20.2, Culture=neutral">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Library\Ajax.dll</HintPath>
+    <Reference Include="AjaxPro">
+      <HintPath>..\bin\AjaxPro.dll</HintPath>
     </Reference>
     <Reference Include="BANANA.Common.v4.5, Version=4.2.1034.15263, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -1004,11 +1003,12 @@
     <Content Include="Controllers\Xenon\UserInfo.ascx" />
     <Content Include="Controllers\Xenon\UserProfile.ascx" />
     <Content Include="Default.aspx" />
-    <Content Include="FileUpload\Default.aspx" />
+    <Content Include="FileUpload\Demo.aspx" />
     <Content Include="Framework\Banana\Logout.aspx" />
     <Content Include="Framework\Coconut\Default.aspx" />
     <Content Include="Framework\Coconut\Logout.aspx" />
     <Content Include="Framework\Coconut\menu.xml" />
+    <Content Include="Global.asax" />
     <Content Include="Images\Letters\a.png" />
     <Content Include="Images\Letters\b.png" />
     <Content Include="Images\Letters\c.png" />
@@ -1289,12 +1289,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FileUpload\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="FileUpload\Demo.aspx.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FileUpload\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="FileUpload\Demo.aspx.designer.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Framework\Banana\Logout.aspx.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
@@ -1316,6 +1316,9 @@
     </Compile>
     <Compile Include="Framework\Coconut\Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Office\ACC\1000.aspx.cs">
       <DependentUpon>1000.aspx</DependentUpon>

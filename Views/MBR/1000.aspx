@@ -5,7 +5,7 @@
 	<script type="text/javascript">
 		function openPage(code) {
 			// 경로 설정
-			var url		= "/Views/MBR/1010.aspx?MBR_CD=" + code;
+			var url = "/Views/MBR/1010.aspx?MBR_CD=" + code;
 
 			// 인디케이터 원상복귀
 			$("#<%=_btnNew.ContainerID%>").HideIndicator();
@@ -14,7 +14,7 @@
 			parent.openModalPopup(url, 1000, 430, function (args) {
 				//alert(args);
 			});
-        }
+		}
 	</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="_cphBody" runat="server">
@@ -23,23 +23,35 @@
 		<table class="gridSearch">
 			<tr>
 				<td class="searchLabel">회원코드</td>
-				<td class="searchObject"><bf:TextBox ID="_txtMBR_CD" runat="server" /></td>
+				<td class="searchObject">
+					<bf:TextBox ID="_txtMBR_CD" runat="server" /></td>
 				<td class="searchLabel">회원명</td>
-				<td class="searchObject"><bf:TextBox ID="_txtMBR_NM" runat="server" /></td>
+				<td class="searchObject">
+					<bf:TextBox ID="_txtMBR_NM" runat="server" /></td>
 				<td class="searchLabel">소속지사</td>
-				<td class="searchObject"><bf:CodeHelper ID="_chBRANCH_CD" runat="server" CodeHelperType="Branch" /></td>
-				<td class="searchButton" rowspan="2" style="width:130px;">
+				<td class="searchObject">
+					<bf:CodeHelper ID="_chBRANCH_CD" runat="server" CodeHelperType="Branch" />
+				</td>
+				<td class="searchButton" rowspan="2" style="width: 130px;">
 					<bf:Button ID="_btnSearch" runat="server" Text="검색" OnClick="_btnSearch_Click" />
 					<bf:Button ID="_btnNew" runat="server" ButtonImage="New" Text="회원등록" OnClientClick="javascript:openPage('');" />
 				</td>
 			</tr>
 			<tr>
 				<td class="searchLabel">추천회원</td>
-				<td class="searchObject"><bf:CodeHelper ID="_chREC_CD" runat="server" CodeHelperType="RECID" /></td>
+				<td class="searchObject">
+					<bf:CodeHelper ID="_chREC_CD" runat="server" CodeHelperType="RECID" />
+				</td>
 				<td class="searchLabel">후원회원</td>
-				<td class="searchObject"><bf:CodeHelper ID="_chSUP_CD" runat="server" CodeHelperType="SUPID" /></td>
+				<td class="searchObject">
+					<bf:CodeHelper ID="_chSUP_CD" runat="server" CodeHelperType="SUPID" />
+				</td>
 				<td class="searchLabel">등록일자</td>
-				<td class="searchObject"><bf:DatePicker ID="_dpSTRT" runat="server" /> ~ <bf:DatePicker ID="_dpEND" runat="server" /></td>
+				<td class="searchObject">
+					<bf:DatePicker ID="_dpSTRT" runat="server" />
+					~
+					<bf:DatePicker ID="_dpEND" runat="server" />
+				</td>
 			</tr>
 		</table>
 	</fieldset>

@@ -120,7 +120,7 @@ namespace demo.bananaframework.net.Controllers
 		/// </summary>
 		/// <param name="PlainText">평문</param>
 		/// <returns></returns>
-		[Ajax.AjaxMethod()]
+		[AjaxPro.AjaxMethod()]
 		public string[] GetEncryptionData(string PlainText)
 		{
 			string[] _retValue = new string[2];
