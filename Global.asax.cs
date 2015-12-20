@@ -21,7 +21,7 @@ namespace demo.bananaframework.net
 			string _curSessionId	= _bp.GetCookie("DemoPermanentUniqueId");
 			if (string.IsNullOrEmpty(_curSessionId))
 			{
-				_bp.SetCookie("DemoPermanentUniqueId", Session.SessionID, new DateTime(2020, 12, 31));
+				_bp.SetCookie("DemoPermanentUniqueId", Guid.NewGuid().ToString(), new DateTime(2020, 12, 31));
 			}
 		}
 
