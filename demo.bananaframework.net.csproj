@@ -1043,6 +1043,7 @@
     <Content Include="Images\user-3.png" />
     <Content Include="Images\user-4.png" />
     <Content Include="Images\user-5.png" />
+    <Content Include="Library\AjaxPro.dll" />
     <Content Include="Library\BANANA.Common.v4.5.dll" />
     <Content Include="Library\BANANA.International.v4.5.dll" />
     <Content Include="Library\BANANA.Web.Controls.v4.5.dll" />
@@ -1121,7 +1122,6 @@
     <Content Include="Images\ui-icons_ff0084_256x240.png" />
     <Content Include="Images\ui-icons_hot.gif" />
     <Content Include="Images\ui-icons_tip.gif" />
-    <Content Include="Library\Ajax.dll" />
     <Content Include="Views\ACC\1000.aspx" />
     <Content Include="Views\ACC\2000.aspx" />
     <Content Include="Views\ACC\3000.aspx" />
