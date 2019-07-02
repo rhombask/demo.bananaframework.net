@@ -1,54 +1,9 @@
 demo.bananaframework.net
 ========================
 
-바나나 프레임워크를 활용한 웹 업무시스템 템플릿입니다.
+We are moving to https://infinihance.visualstudio.com/BANANA.Demo.
 
-ERP, MIS, CRM 등 기간계 업무시스템을 개발하시려면 처음 시작할 때에 프레임워크(플랫폼) 작업을 하셔야 하죠?
+아래 경로로 이동 하였습니다.
 
-이 프레임워크 개발에 많은 시간과 비용이 드는 것은 사실입니다만, 많은 고객사들은 그 비용을 지불할 생각을 안 하네요.
+https://infinihance.visualstudio.com/BANANA.Demo
 
-ASP.NET 개발자라면 누구나 무료로 사용하실 수 있는 일반적인 템플릿의 프레임워크를 공개합니다.
-
-본 템플릿에는 아래의 가능들이 기본적으로 개발되어 있습니다.
-
--- 아 래 --
-
-01) 이용자정보관리
-
-02) 권한그룹관리
-
-03) 권한그룹별권한관리
-
-04) 화면관리
-
-05) 공통코드관리
-
-06) 휴일관리
-
-07) 기타 샘플 화면들
-
-08) 기본적인 권한 처리
-
-09) 탭 처리
-
-10) 풀다운 메뉴
-
-또한, SQL Server 연결정보도 공개되어 있으니 각종 테이블, 프로시저 및 사용자 정의 함수도 다운로드 받으셔서 연습해 보실 수 있습니다.
-
-※ 본 템플릿 자체는 무료이나, 프레임워크의 기본이 되는 "바나나 프레임워크( http://www.bananaframework.net )"은 무료가 아닙니다.
-
-※ 바나나 프레임워크의 라이선스 정책에 대해서는 여기( http://www.bananaframework.net/Views/License.aspx )를 참고하세요.
-
-※ 본 템플릿을 제대로 구동하기 위해서는 바나나 프레임워크가 우선 설치되어야 합니다.
-
-※ 바나나 프레임워크는 개인 개발자에게 무료로 배포되고 있습니다. 설치 파일은 여기 ( http://www.bananaframework.net/Views/Download.aspx )를 클릭하세요.
-
-※ 데모는 http://demo.bananaframework.net 에서 확인하실 수 있습니다.
-
-ID: demo
-
-PW: demo
-
-※ /Controllers/Web.Maste 및 /Controllers/Popup.Master에서 구글 Analytics 관련 함수는 지우고 이용하시기 바랍니다.
-
-※ 확장자가 .amlic로 끝나는 라이선스 파일들은 다른 컴퓨터에서는 사용이 불가합니다. "바나나 프레임워크( http://www.bananaframework.net )" 홈페이지에서 라이선스 파일을 다운로드 받으세요.
